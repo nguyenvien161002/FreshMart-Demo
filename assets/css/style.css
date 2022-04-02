@@ -18,7 +18,7 @@ html {
     margin-left: auto;
 }
 
-.ml--05{
+.ml--05 {
     margin-left: -0.5px !important;
 }
 
@@ -26,9 +26,6 @@ html {
     margin-top: 50px; 
 }
 
-#main { 
-
-}
 /* HEADER */
 #header { 
     background-color: #3ba66b;
@@ -69,14 +66,38 @@ html {
 }
 
 #nav .subnav {
-    display: none;
     position: absolute;
     width: 200px;
     z-index: 1;
     background-color: #fff;
     list-style: none;
     box-shadow: 0px 9px 15px 10px rgb(0 0 0 / 5%);
+    animation: Grow ease-in 0.2s;
+    transform-origin: calc(100% - 170px) top;
+    display: none;
 }
+
+@keyframes Grow {
+    from {
+        opacity: 0;
+        transform: scale(0);
+    }
+    to {
+        opacity: 1;
+        transform: scale(1);
+    }
+}
+
+/* Khối mủi tên chỉ lên trên */
+#nav .subnav::before {
+    content: "";
+    border: 10px solid;
+    border-color: transparent transparent #fff transparent;
+    position: absolute;
+    left: 26.5px;
+    top: -20px;
+}
+
 
 #nav .subnav-item a {
     color: #000;
@@ -86,7 +107,7 @@ html {
 }
 
 #nav .nav-item .nav-product {
-    padding: 10px 0px;
+    padding: 13px 0px;
 }
 
 #nav .nav-item:hover .subnav {
@@ -258,6 +279,10 @@ html {
     justify-content: center;
 }
 
+.sectiontwo-title .title-about:hover {
+    color: #ffb416;
+}
+
 .sectiontwo-title .title-about p {
     padding-left:20px;
 }
@@ -283,6 +308,10 @@ html {
 .sectiontwo-item .item-sp {
     font-size: 15px;
     max-width: 227px;
+}
+
+.sectiontwo-item .item-sp > a:hover {
+    color: #ffb416;
 }
 
 .sectiontwo-item .item-sp img {
@@ -372,12 +401,16 @@ html {
     position: relative;
 }
 
-
 .sectionfour-menu > a {
     font-size: 20px;
     text-decoration: none;
     color: #000;
     font-weight: bold;
+}
+
+.menu-dish > a:hover,
+.sectionfour-menu a:hover {
+    color: #ffb416 !important;
 }
 
 .polka-dots {
@@ -523,6 +556,10 @@ html {
     margin-bottom: 10px;font-weight: bold;
 }
 
+.sectioneight-title a:hover {
+    color: #ffb416;
+}
+
 .sectioneight-title img {
     max-width: 62px;
 }
@@ -600,8 +637,6 @@ html {
 #footer { 
     background-color: #3ba66b;
     position: relative;
-    
-    /* margin-top: 80px; */
 }
 
 #drop-of-water1 {
@@ -724,4 +759,153 @@ html {
     margin-left: -2px;
 }
 
+/* MODAL */
+
+.modal {
+    position: fixed;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    display: flex;
+    display: none;
+}
+
+.modal__overlay {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.4);
+    z-index: 1;
+}
+
+.modal__body {
+    z-index: 2;
+    background-color: white;
+    margin: auto;
+    width: 500px;
+    border-radius: 5px;
+    overflow: hidden;
+    animation: Grow ease-in 0.2s;
+}
+
+.inner__authform--header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 20px 30px;
+    background-color: #3ba66b;
+    color: white;
+}
+
+.inner__authform--body {
+    padding: 30px;
+}
+
+.inner__authform--header > p {
+    font-size: 30px;
+    font-weight: 600;
+}
+
+.inner__authform--header > span {
+    font: 18px;
+    font-weight: 500;
+}
+
+.inner__authform--form .authform__item {
+    display: flex;
+    flex-direction: column;
+    padding: 8px 0;
+}
+
+.authform__item label {
+    padding-bottom: 5px;
+}
+
+.authform__item input {
+    padding: 12px;
+    border-radius: 3px;
+    border: 1px solid #ccc;
+    outline: none;
+    background-color: rgb(243, 240, 240);
+}
+
+.authform__item input:focus {
+    border-color: #888;
+}
+
+.termsandpolicy {
+    text-align: center;
+    margin: 20px 0 60px;
+}
+
+.termsandpolicy a {
+    text-decoration: none;
+    color: #2e8053;
+}
+
+.inner__authform--controls {
+    display: flex;
+    justify-content: right;
+}
+
+.inner__authform--controls > button {
+    padding: 15px 28px;
+    margin-left: 20px;
+    border: 1px solid #ccc;
+    background-color: #3ba66b;
+    border-radius: 5px;
+    color: white;
+    font-weight: 500;
+    cursor: pointer;
+}
+
+.inner__authform--socials {
+    background-color: rgb(231, 231, 231);
+    display: flex;
+    justify-content: space-around;
+}
+
+.inner__authform--socials a {
+    text-decoration: none;
+    font-weight: 500;
+}
+
+.authform--socials-item {
+    padding: 10px;
+    margin: 10px 0px;
+    width: 220px;
+    border-radius: 3px;
+}
+
+.authform--socialsFb {
+    background-color: #217efc;
+    margin-left: 23px;
+}
+
+.authform--socialsFb i {
+    font-size: x-large;
+    margin-right: 30px;
+}
+
+.authform--socialsGg {
+    background-color: white;
+    margin-right: 23px;
+}
+
+.authform--socialsGg img {
+    width: 22px;
+    margin-right: 30px;
+}
+
+.authform--socialsFb a,
+.authform--socialsGg a {
+    display: flex;
+    align-items: center;
+    color: white;
+}
+
+.authform--socialsGg a  {
+    color: rgb(84, 83, 83);
+}
 /* THE END CSS WEB */
