@@ -5,10 +5,12 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Fresh Mart </title>
-    <link rel="stylesheet" href="./assets/css/style.css">
     <link rel="stylesheet" href="./assets/themify-icons-font/themify-icons/themify-icons.css">
     <link rel="stylesheet" href="./assets/css/responsive.css">
     <link rel="stylesheet" href="./assets/fontawesome-free-6.1.1/fontawesome-free-6.1.1-web/css/all.min.css">
+    <link rel="stylesheet" href="./assets/OwlCarousel2-2.3.4/OwlCarousel2-2.3.4/dist/assets/owl.carousel.min.css">
+    <link rel="stylesheet" href="./assets/OwlCarousel2-2.3.4/OwlCarousel2-2.3.4/dist/assets/owl.theme.default.min.css">
+    <link rel="stylesheet" href="./assets/css/style.css">
 </head>
 <body>
     <div id="main">
@@ -24,7 +26,7 @@
                         </li>
                         <li class="nav-item nav-product ">
                             <div class="nav-product">
-                                <a href="./product.html">Sản phẩm <i class="ti-arrow-circle-down nav-arrow-icon"></i></a>
+                                <a href="./products.html">Sản phẩm <i class="ti-arrow-circle-down nav-arrow-icon"></i></a>
                             </div>
                             <ul class="subnav">
                                 <li class="subnav-item"><a href="#">Trái cây</a></li>
@@ -73,7 +75,7 @@
         </div>
         <!-- Content -->
         <div id="content">
-            <div class="sectionone width_86 m-lr-auto ">
+            <div class="sectionone width_86 m-lr-auto owl-carousel owl-theme">
                 <div class="sectionone-item">
                     <div class="item-cate">
                         <img src="./assets/images/cate_1.webp" alt="" class="cate1">
@@ -111,7 +113,7 @@
                     </div>
                 </div>
             </div>
-            <div class="sectiontwo width_86 m-lr-auto ">
+            <div class="sectiontwo width_86 m-lr-auto">
                 <!-- SECTION--TWO.TITLE -->
                 <div class="sectiontwo-title">
                     <div class="title-about">
@@ -120,94 +122,96 @@
                     </div>
                 </div>
                 <!-- SECTION--TWO.ABOUT -->
-                <div class="sectiontwo-about">
-                    <div class="sectiontwo-item">
-                        <div class="item-rprice">
-                            <p>- 60%</p>
-                        </div>
-                        <div class="item-sp">
-                            <a href="">
-                                <img src="./assets/images/sp1.webp" alt="Ổi lê ruột đỏ">
-                            </a>
-                        </div>
-                        <div class="item-sp">
-                            <a href="" class="item-sp--name" >Ổi lê ruột đỏ</a>
-                            <div class="item-sp-price">
-                                <p class="item-sp--cost">20.000<a>đ</a></p>
-                                <!-- reduced price: giảm giá -->
-                                <p class="item-sp--rprice">50.000<a>đ</a></p>
+                <div class="owl-carousel owl-theme widthslider1210">
+                    <div class="sectiontwo-about">
+                        <div class="sectiontwo-item">
+                            <div class="item-sp">
+                                <div class="item-rprice">
+                                    <p>- 60%</p>
+                                </div>
+                                <a href="./guava.html">
+                                    <img src="./assets/images/sp1.webp" alt="Ổi lê ruột đỏ">
+                                </a>
+                            </div>
+                            <div class="item-sp">
+                                <a href="./guava.html" class="item-sp--name" >Ổi lê ruột đỏ</a>
+                                <div class="item-sp-price">
+                                    <p class="item-sp--cost">20.000<a>đ</a></p>
+                                    <!-- reduced price: giảm giá -->
+                                    <p class="item-sp--rprice">50.000<a>đ</a></p>
+                                </div>
                             </div>
                         </div>
-                    </div>
-                    <div class="sectiontwo-item">
-                        <div class="item-rprice">
-                            <p>- 41%</p>
-                        </div>
-                        <div class="item-sp">
-                            <a href="">
-                                <img src="./assets/images/sp2.webp" alt="Đào đỏ Mỹ">
-                            </a>
-                        </div>
-                        <div class="item-sp">
-                            <a href="" class="item-sp--name" >Đào đỏ Mỹ</a>
-                            <div class="item-sp-price">
-                                <p class="item-sp--cost">40.000<a>đ</a></p>
-                                <!-- reduced price: giảm giá -->
-                                <p class="item-sp--rprice">68.000<a>đ</a></p>
+                        <div class="sectiontwo-item">
+                            <div class="item-rprice">
+                                <p>- 41%</p>
+                            </div>
+                            <div class="item-sp">
+                                <a href="./redpeachUSA.html">
+                                    <img src="./assets/images/sp2.webp" alt="Đào đỏ Mỹ">
+                                </a>
+                            </div>
+                            <div class="item-sp">
+                                <a href="./redpeachUSA.html" class="item-sp--name" >Đào đỏ Mỹ</a>
+                                <div class="item-sp-price">
+                                    <p class="item-sp--cost">40.000<a>đ</a></p>
+                                    <!-- reduced price: giảm giá -->
+                                    <p class="item-sp--rprice">68.000<a>đ</a></p>
+                                </div>
                             </div>
                         </div>
-                    </div>
-                    <div class="sectiontwo-item">
-                        <div class="item-rprice">
-                            <p>- 42%</p>
-                        </div>
-                        <div class="item-sp">
-                            <a href="">
-                                <img src="./assets/images/sp3.webp" alt="Dâu tây">
-                            </a>
-                        </div>
-                        <div class="item-sp">
-                            <a href="" class="item-sp--name" >Dâu tây</a>
-                            <div class="item-sp-price">
-                                <p class="item-sp--cost">138.000<a>đ</a></p>
-                                <!-- reduced price: giảm giá -->
-                                <p class="item-sp--rprice">238.000<a>đ</a></p>
+                        <div class="sectiontwo-item">
+                            <div class="item-rprice">
+                                <p>- 42%</p>
+                            </div>
+                            <div class="item-sp">
+                                <a href="./strawberry.html">
+                                    <img src="./assets/images/sp3.webp" alt="Dâu tây">
+                                </a>
+                            </div>
+                            <div class="item-sp">
+                                <a href="./strawberry.html" class="item-sp--name" >Dâu tây</a>
+                                <div class="item-sp-price">
+                                    <p class="item-sp--cost">138.000<a>đ</a></p>
+                                    <!-- reduced price: giảm giá -->
+                                    <p class="item-sp--rprice">238.000<a>đ</a></p>
+                                </div>
                             </div>
                         </div>
-                    </div>
-                    <div class="sectiontwo-item">
-                        <div class="item-rprice">
-                            <p>- 21%</p>
-                        </div>
-                        <div class="item-sp">
-                            <a href="">
-                                <img src="./assets/images/sp4.webp" alt="Chanh tươi vỏ xanh">
-                            </a>
-                        </div>
-                        <div class="item-sp">
-                            <a href="" class="item-sp--name" >Chanh tươi vỏ xanh</a>
-                            <div class="item-sp-price">
-                                <p class="item-sp--cost">30.000<a>đ</a></p>
-                                <!-- reduced price: giảm giá -->
-                                <p class="item-sp--rprice">38.000<a>đ</a></p>
+                        <div class="sectiontwo-item">
+                            <div class="item-rprice">
+                                <p>- 21%</p>
+                            </div>
+                            <div class="item-sp">
+                                <a href="">
+                                    <img src="./assets/images/sp4.webp" alt="Chanh tươi vỏ xanh">
+                                </a>
+                            </div>
+                            <div class="item-sp">
+                                <a href="" class="item-sp--name" >Chanh tươi vỏ xanh</a>
+                                <div class="item-sp-price">
+                                    <p class="item-sp--cost">30.000<a>đ</a></p>
+                                    <!-- reduced price: giảm giá -->
+                                    <p class="item-sp--rprice">38.000<a>đ</a></p>
+                                </div>
                             </div>
                         </div>
-                    </div>
-                    <div class="sectiontwo-item">
-                        <div class="item-rprice">
-                            <p>- 41%</p>
-                        </div>
-                        <div class="item-sp">
-                            <a href="">
-                                <img src="./assets/images/sp5.webp" alt="Trái cam mật">
-                            </a>
-                        </div>
-                        <div class="item-sp">
-                            <a href="" class="item-sp--name" >Trái cam mật</a>
-                            <div class="item-sp-price">
-                                <p class="item-sp--cost">138.000<a>đ</a></p>
-                                <!-- reduced price: giảm giá -->
-                                <p class="item-sp--rprice">238.000<a>đ</a></p>
+                        <div class="sectiontwo-item">
+                            <div class="item-rprice">
+                                <p>- 41%</p>
+                            </div>
+                            <div class="item-sp">
+                                <a href="">
+                                    <img src="./assets/images/sp5.webp" alt="Trái cam mật">
+                                </a>
+                            </div>
+                            <div class="item-sp">
+                                <a href="" class="item-sp--name" >Trái cam mật</a>
+                                <div class="item-sp-price">
+                                    <p class="item-sp--cost">138.000<a>đ</a></p>
+                                    <!-- reduced price: giảm giá -->
+                                    <p class="item-sp--rprice">238.000<a>đ</a></p>
+                                </div>
                             </div>
                         </div>
                     </div>
@@ -644,6 +648,8 @@
         <div class="modal">
             <div class="modal__overlay"></div>
             <div class="modal__body">
+                <!-- Register -->
+                <!-- Terms and policy: điều khoản và dịch vụ -->
                 <div class="modal__inner">
                     <div class="inner__authform--header">
                         <img src="./assets/images/logo.webp" alt="">
@@ -663,7 +669,6 @@
                                 <label for="password">Nhập lại mật khẩu</label>
                                 <input type="password" name="" id="" placeholder="Nhập lại mật khẩu">
                             </div>
-                            <!-- Terms and policy: điều khoản và dịch vụ -->
                             <div class="termsandpolicy">
                                 <p>Bằng việc đăng kí, bạn đã đồng ý với Fresh Mart về 
                                     <a href="">Điều khoản dịch vụ</a>
@@ -684,9 +689,70 @@
                             <a href="" class=""><img src="./assets/images/icon-ggofcolor.png" alt="">Kết nối với Google</a>
                         </div>
                     </div>
-                </div>
+                </div> 
+                <!-- LogIn -->
+                <!-- <div class="modal__inner">
+                    <div class="inner__authform--header">
+                        <img src="./assets/images/logo.webp" alt="">
+                        <p>Đăng nhập</p>
+                    </div>
+                    <div class="inner__authform--body">
+                        <div class="inner__authform--form">
+                            <div class="authform__item">
+                                <label for="text">Tài khoản</label>
+                                <input type="text" name="" id="" placeholder="Email hoặc số điện thoại">
+                            </div>
+                            <div class="authform__item">
+                                <label for="password">Mật khẩu</label>
+                                <input type="password" name="" id="" placeholder="Mật khẩu của bạn">
+                            </div>
+                            <div class="authform__help">
+                                <a href="#" class="authform__help--forgot">Quên mật khẩu</a>
+                                <span class="authform__help--separate"></span>
+                                <a href="#" class="authform__help--help">Cần trợ giúp?</a>
+                            </div>
+                        </div>
+                        <div class="inner__authform--controls">
+                            <button>HỦY</button>
+                            <button>ĐĂNG KÝ</button>
+                        </div>
+                    </div>
+                    <div class="inner__authform--socials">
+                        <div class="authform--socials-item authform--socialsFb">
+                            <a href="" class=""><i class="fa-brands fa-facebook-square"></i>Kết nối với Facebook</a>
+                        </div>
+                        <div class="authform--socials-item authform--socialsGg">
+                            <a href="" class=""><img src="./assets/images/icon-ggofcolor.png" alt="">Kết nối với Google</a>
+                        </div>
+                    </div>
+                </div> -->
             </div>
         </div>
     </div>
+    <!-- JAVASCRIP -->
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js" integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
+    <script src="./assets/OwlCarousel2-2.3.4/OwlCarousel2-2.3.4/dist/owl.carousel.min.js"></script>
+    <script>
+        $('.owl-carousel').owlCarousel({
+            loop:true,
+            margin:10,
+            responsiveClass:true,
+            responsive:{
+                0:{
+                    items:1,
+                    nav:true
+                },
+                600:{
+                    items:3,
+                    nav:false
+                },
+                1000:{
+                    items:6,
+                    nav:false,
+                    loop:false
+                }
+            }
+        })
+    </script>
 </body>
 </html>

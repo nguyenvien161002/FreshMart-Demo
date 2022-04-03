@@ -212,20 +212,26 @@ html {
 
 #content .sectionone {
     display: flex;
-    justify-content: space-between;   
 }
 
 #content .sectionone-item {
-    width: 188px;
-    height: 100%;
+    /* width: 188px; */
     text-align: center;
     box-shadow: 0px 9px 15px 0px rgb(0 0 0 / 5%);
     border-radius: 10px;
     cursor: pointer;
 }
 
+#content .sectionone-item:last-child {
+    margin-right: 0;
+}
+
 .sectionone-item .item-cate {
     margin: 25px 0px 0px;
+}
+
+.sectionone-item .item-cate {
+    padding: 16px;
 }
 
 .sectionone-item img {
@@ -237,13 +243,17 @@ html {
 }
 
 .sectionone-item img:hover {
-    box-shadow: 0px 0px 15px 5px rgb(0 0 0 / 5%); 
+    box-shadow: 0px 5px 7px 5px rgb(0 0 0 / 5%);
+    transform: translateY(4px);
+    transition: all 0.5s ease;
+    transform-origin: top; 
 }
 
 .sectionone-item p {
-    margin: 20px 0px 30px;
+    padding: 15px 0px 25px;
     font-weight: 300;
 }
+
 /* CONTENT.SECTION--TWO */
 #content .sectiontwo  {
     display: flex;
@@ -252,8 +262,9 @@ html {
     align-items: center;
     border: 2px solid #de2828;
     border-radius: 20px;
-    margin-top: 100px;
+    margin-top: 85px;
     position: relative;
+    z-index: 10;
 }
 
 
@@ -291,10 +302,15 @@ html {
     display: flex;
     margin-top: 62px;
     margin-bottom: 20px;
+    z-index: 1;
 }
 
 .sectiontwo-item:last-child {
     border: none;
+}
+
+.sectiontwo-item:last-child img {
+    margin-right: 0 !important;
 }
 
 .sectiontwo-item {
@@ -302,22 +318,22 @@ html {
     text-align: center;
     position: relative;
     cursor: pointer;
+    margin-left: 15px;
 }
 
 
 .sectiontwo-item .item-sp {
     font-size: 15px;
     max-width: 227px;
+    overflow: hidden;
 }
 
 .sectiontwo-item .item-sp > a:hover {
     color: #ffb416;
 }
 
-.sectiontwo-item .item-sp img {
-    max-width: 100%;
-    max-height: 100%;
-    margin-right: 10px;
+.sectiontwo-item .item-sp img:hover {
+    /* transform: scale(1.05); */
 }
 
 .item-sp .item-sp--name {
@@ -335,9 +351,7 @@ html {
     color: #fff;
     font-weight: 550;
     font-size: 14px ;
-    margin-left: 10px;
 }
-
 
 .item-sp-price {
     display: flex;
@@ -372,16 +386,24 @@ html {
     justify-content: space-between;
 }
 
-
 .sectionthree-banner {
-   cursor: pointer;
+    max-width: 630px;
+    border-radius: 20px;
+    overflow: hidden;
+    max-height: 280px;
 }
 
 .sectionthree-banner img {
-    border-radius: 20px;
     max-width: 100%;
     transition: all .2s ease;
 }
+
+.sectionthree-banner img:hover {
+    cursor: pointer;
+    transform: scale(1.05);
+    transition: all ease 0.2s;
+ }
+ 
 
 .sectionfour {
     display: flex;
@@ -480,6 +502,14 @@ html {
     margin: 0px;
 }
 
+.sectionfive .sectionfour-about {
+    margin-right: -20px ;
+}
+
+.sectionfive .sectionfour-item {
+    margin-left: 0;
+    margin-right: 35px;
+}
 
 .sectionfive-menu {
     border-radius: 20px;
@@ -760,7 +790,6 @@ html {
 }
 
 /* MODAL */
-
 .modal {
     position: fixed;
     top: 0;
@@ -844,6 +873,33 @@ html {
     color: #2e8053;
 }
 
+.authform__help {
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+    margin: 10px 0 60px;
+}
+
+.authform__help a {
+    text-decoration: none;
+    font-weight: 500;
+}
+
+.authform__help--forgot {
+    color: #3ba66b;
+}
+
+.authform__help--help {
+    color: #888;
+}
+
+.authform__help--separate {
+    display: block;
+    border-left: 1px solid #ccc;
+    margin: 0 10px;
+    height: 22px;
+}
+
 .inner__authform--controls {
     display: flex;
     justify-content: right;
@@ -851,7 +907,7 @@ html {
 
 .inner__authform--controls > button {
     padding: 15px 28px;
-    margin-left: 20px;
+    margin-left: 10px;
     border: 1px solid #ccc;
     background-color: #3ba66b;
     border-radius: 5px;
@@ -908,4 +964,44 @@ html {
 .authform--socialsGg a  {
     color: rgb(84, 83, 83);
 }
+
 /* THE END CSS WEB */
+
+/* OWL CAROUSEL */
+.owl-carousel .owl-item img {
+    display: initial;
+    width: 100%;
+}
+
+.owl-item.active:last-child {
+    margin: 0 !important;
+}
+
+.owl-item.active {
+    width: auto !important;
+    margin-right: 28px !important;
+}
+
+.sectionone .owl-item {
+    height: 282px;
+}
+
+.sectionone .owl-stage {
+    width: 1280px !important;
+    display: flex;
+    justify-content: center;
+}
+.sectiontwo .owl-stage {
+    width: auto !important;
+    display: flex;
+    justify-content: center;
+}
+
+/* .sectiontwo .owl-carousel.owl-theme {
+    overflow: hidden;
+} */
+
+.widthslider1210 {
+    width: 1215px;
+}
+/* THE END FIX OWLCAROUSEL */
