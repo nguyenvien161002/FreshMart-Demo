@@ -284,6 +284,33 @@ html {
     position: relative;
 }
 
+.content-details .content-details--imgonion {
+    background-image: url(../images/sp7.webp);
+    background-repeat: no-repeat;
+    background-size: cover;
+    position: relative;
+}
+
+.content-details .content-details--imgtomato {
+    background-image: url(../images/sp8.webp);
+    background-repeat: no-repeat;
+    background-size: cover;
+    position: relative;
+}
+
+.content-details .content-details--imgyellowbellpepper {
+    background-image: url(../images/sp9.webp);
+    background-repeat: no-repeat;
+    background-size: cover;
+    position: relative;
+}
+
+.content-details .content-details--imggreenbellpepper {
+    background-image: url(../images/sp10.webp);
+    background-repeat: no-repeat;
+    background-size: cover;
+    position: relative;
+}
 
 .content-details {
     display: flex;
@@ -312,6 +339,11 @@ html {
 
 .content-details--info > p {
     margin-bottom: 5px;
+}
+
+.content-details--info > b {
+    color: red;
+    font-size: 22px;
 }
 
 .content-details--info .info-SKU {
@@ -351,6 +383,11 @@ html {
 
 .content-details--info .info-des {
     line-height: 22px;
+}
+
+/* Special - tomato.html  */
+.content-details--info .info-des-tomato {
+    margin-top: 8px;
 }
 
 .content-details--weight > p {
@@ -563,7 +600,6 @@ html {
 .product-item .item-sp-price .item-sp--cost {
     color: #eb3e32;
     font-weight: bold;
-    padding-right: 5px;
 }
 
 .product-item .item-sp-price a {
@@ -574,6 +610,7 @@ html {
     font-size: 13px;
     color: #777;
     text-decoration: line-through;
+    padding-left: 5px;
 }
 
 
