@@ -239,6 +239,7 @@ html {
     min-height: 156px;
     object-fit: cover;
     margin-top: -10px;
+    transition: all 0.5s ease;
 }
 
 .sectionone-item img:hover {
@@ -283,13 +284,15 @@ html {
     cursor: pointer;
 }
 
-.sectiontwo-title .title-about {
+.sectiontwo-title .title-about a {
     display: flex;
     align-items: center;
     justify-content: center;
+    text-decoration: none;
+    color: #202328;
 }
 
-.sectiontwo-title .title-about:hover {
+.sectiontwo-title .title-about a:hover {
     color: #ffb416;
 }
 
@@ -393,13 +396,13 @@ html {
 
 .sectionthree-banner img {
     max-width: 100%;
-    transition: all .2s ease;
+    transition: all 0.5s ease;
 }
 
 .sectionthree-banner img:hover {
     cursor: pointer;
     transform: scale(1.05);
-    transition: all ease 0.2s;
+    transition: all ease 0.5s;
  }
  
 
@@ -556,7 +559,7 @@ html {
     align-items: center;
 }
 
-.sectionseven-delivery > div > p {
+.sectionseven-delivery > div p {
     background-color: #fff;
     padding: 0px 25px;
     border-radius: 30px;
@@ -565,6 +568,10 @@ html {
     color: #272727;
     margin-top: 15px;
     font-size: 15px;
+}
+
+.sectionseven-delivery > div a {
+    text-decoration: none;
 }
 
 .sectioneight {
@@ -600,39 +607,38 @@ html {
 }
 
 .sectioneight-item {
-    max-width: 305px;
     max-height: 305px;
-    padding: 125px 0px;
     border-radius: 5px;
+    overflow: hidden;
+    position: relative;
 }
 
-.sectioneight-item1 {
-    background-image: linear-gradient(to bottom, rgba(0,0,0,0.0), rgba(0, 0, 0, 0.6)), url(../images/n1.webp);
-    background-size: cover;
-    background-repeat: no-repeat;
-    width: 305px;  
-    height: 305px;
-}
-
-.sectioneight-item2 {
-    background-image: linear-gradient(to bottom, rgba(0,0,0,0.0), rgba(0, 0, 0, 0.6)),  url(../images/n2.webp);
-    background-size: cover;
-    background-repeat: no-repeat;
+.sectioneight-item .item-img img {
     width: 305px;
+    transition: all 1s;
 }
 
-.sectioneight-item3 {
-    background-image: linear-gradient(to bottom, rgba(0,0,0,0.0), rgba(0, 0, 0, 0.6)),  url(../images/n3.webp);
-    background-size: cover;
-    background-repeat: no-repeat;
-    width: 305px; 
-}
-
-.sectioneight-item4 {
-    background-image: linear-gradient(to bottom, rgba(0,0,0,0.0), rgba(0, 0, 0, 0.6)), url(../images/n4.webp);
-    background-size: cover;
-    background-repeat: no-repeat;
+.sectioneight-item .item-img::before {
+    content: '';
+    position: absolute;
+    bottom: 0;
+    height: 50%;
     width: 305px;
+    z-index: 1;
+    background: -webkit-linear-gradient(bottom, rgba(0,0,0,0.66), transparent);
+    background: linear-gradient(to bottom, 0 rgba(0,0,0,0.65), transparent);
+}
+
+.sectioneight-item .item-img img:hover {
+    transform: scale(1.1);
+    transition: all 1s ease;
+    cursor: pointer;
+}
+
+.item-description {
+    position: absolute;
+    bottom: 10px;
+    z-index: 2; 
 }
 
 .sectioneight-item .item-title {
@@ -643,11 +649,6 @@ html {
     color: #fff;
     font-weight: bold;
     max-width: 305px;
-}
-
-.item-description {
-    position: absolute;
-    bottom: 10px;
 }
 
 .sectioneight-item a {
@@ -795,6 +796,7 @@ html {
     left: 0;
     right: 0;
     display: flex;
+    z-index: 100;
     display: none;
 }
 
@@ -806,7 +808,7 @@ html {
     z-index: 1;
 }
 
-.modal__body {
+.modal__registerlogin {
     z-index: 2;
     background-color: white;
     margin: auto;
@@ -962,6 +964,55 @@ html {
 .authform--socialsGg a  {
     color: rgb(84, 83, 83);
 }
+
+/* MODAL CART SHOPPING */
+.modal__cartshopping {
+    background-color: white;
+    z-index: 2;
+    width: 340px;
+}
+
+.modal__cartshpping--inner {
+    padding: 10px;
+}
+
+.modal__cartshopping--header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 5px;
+}
+
+.modal__cartshopping--content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 25px 0 0 ;
+}
+
+.modal__cartshopping--content img{
+    height: 200px;
+    width: 200px;
+}
+
+.btn--continueshopping {
+    bottom: 0;
+    padding: 12px 30px;
+    margin-top: 20px;
+    border: none;
+    border-radius: 5px;
+    background-color: #3ba66b;
+    font-size: 16px;
+    color: white;
+}
+
+.btn--continueshopping:hover {
+    background-color: #2e8053;
+    cursor: pointer;
+}
+
+/* THE END CSS MODAL */
+
 
 /* THE END CSS WEB */
 

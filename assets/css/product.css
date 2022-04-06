@@ -312,6 +312,49 @@ html {
     position: relative;
 }
 
+.content-details .content-details--imggrape {
+    background-image: url(../images/sp15.webp);
+    background-repeat: no-repeat;
+    background-size: cover;
+    position: relative;
+}
+
+.content-details .content-details--imggreenappe {
+    background-image: url(../images/sp22.webp);
+    background-repeat: no-repeat;
+    background-size: cover;
+    position: relative;
+}
+
+.content-details .content-details--imgbeef {
+    background-image: url(../images/sp11.webp);
+    background-repeat: no-repeat;
+    background-size: contain;
+    position: relative;
+}
+
+.content-details .content-details--imgsalmon {
+    background-image: url(../images/sp12.webp);
+    background-repeat: no-repeat;
+    background-size: contain;
+    position: relative;
+}
+
+.content-details .content-details--imgchicken {
+    background-image: url(../images/sp13.webp);
+    background-repeat: no-repeat;
+    background-size: contain;
+    position: relative;
+}
+
+.content-details .content-details--imgpork {
+    background-image: url(../images/sp14.webp);
+    background-repeat: no-repeat;
+    background-size: contain;
+    position: relative;
+}
+
+
 .content-details {
     display: flex;
     width: 820px;
@@ -388,6 +431,13 @@ html {
 /* Special - tomato.html  */
 .content-details--info .info-des-tomato {
     margin-top: 8px;
+}
+/* Special - beef.html  */
+.product-pork,
+.product-chicken {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
 }
 
 .content-details--weight > p {

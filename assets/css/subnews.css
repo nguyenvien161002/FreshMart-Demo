@@ -250,9 +250,13 @@ html {
 
 .sidebar-content .item-name {
     padding: 8px 0px;
-    display: flex; 
+}
+
+.sidebar-content .item-name > a {
+    display: flex;
     align-items: center;
 }
+
 
 .sidebar-content-list a {
     text-decoration: none;
