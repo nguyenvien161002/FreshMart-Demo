@@ -10,7 +10,7 @@ html {
 
 
 .width_86 {
-    width: 1280px;
+    width: 86%;
 }
 
 .m-lr-auto {
@@ -41,7 +41,6 @@ html {
     margin-right: auto;
     margin-left: auto;
     padding: 35px 0px; 
-    overflow: hidden;
 }
 
 .nav-left #nav{
@@ -62,7 +61,8 @@ html {
 }
 
 #nav .header-nav-home {
-    padding-left: 0px !important;  
+    padding-left: 0px !important;
+    margin-left: 3px;
 }
 
 #nav .subnav {
@@ -138,9 +138,8 @@ html {
 
 .nav-right .search input {
     border-radius: 50px;
-    height: 50px;
+    padding: 15px 50px 15px 20px;
     outline: none;
-    padding: 0px 15px;
     border: none; 
 }
 
@@ -148,7 +147,7 @@ html {
     position: absolute;
     right: 0;
     background: #ffb416;
-    padding: 15px;
+    padding: 13px;
     border-radius: 50%;
     color: #fff;
     font-size: 20px;
@@ -172,7 +171,7 @@ html {
 }
 
 .nav-right .ti-search,
-.nav-right-icon > a {
+.nav-right-icon a {
     text-decoration: none;
     color: #fff;
 }
@@ -181,10 +180,61 @@ html {
     padding: 0px 10px;
 }
 
+.nav-right-icon {
+    position: relative;
+}
+
+.signupsignin {
+    position: absolute;
+    right: 0;
+    background-color: white;
+    border-radius: 4px;
+    box-shadow: 0px 2px 6px 0px rgb(50 50 50 / 33%);
+    z-index: 2;
+    text-align: center;
+    margin-top: 7px;
+    display: none;
+}
+
+.signupsignin a {
+    color: #000;
+    font-size: 16px;
+    display: block;
+    padding: 8px 25px;
+}
+
+.signupsignin::after {
+    content: "";
+    position: absolute;
+    border: 10px solid;
+    border-color: transparent transparent #fff transparent;
+    top: -18px;
+    right: 6px;
+}
+
+.signupsignin::before {
+    content: "";
+    position: absolute;
+    border: 10px solid;
+    width: 100px;
+    background-color: transparent;
+    border-color: transparent;
+    top: -10px;
+    right: 0;
+}
+
+.signupsignin .signin {
+    border-bottom: 1px solid #ccc;
+}
+
+.user:hover .signupsignin {
+    display: block;
+}
 
 .nav-right-icon .ti-user {
     margin-right: -10px;
 }
+
 
 /* SLIDER */
 #slider {
@@ -212,6 +262,7 @@ html {
 
 #content .sectionone {
     display: flex;
+    justify-content: space-between;
 }
 
 #content .sectionone-item {
@@ -227,10 +278,7 @@ html {
 
 .sectionone-item .item-cate {
     margin: 25px 0px 0px;
-}
-
-.sectionone-item .item-cate {
-    padding: 16px;
+    padding: 16px
 }
 
 .sectionone-item img {
@@ -258,13 +306,12 @@ html {
 #content .sectiontwo  {
     display: flex;
     flex-direction: column;
-    justify-content: center;
     align-items: center;
     border: 2px solid #de2828;
     border-radius: 20px;
     margin-top: 85px;
     position: relative;
-    z-index: 10;
+    z-index: 1;
 }
 
 
@@ -280,8 +327,9 @@ html {
     border-radius: 50px;
     position: absolute;
     background-color: #fff;
-    margin-top: -367px;
     cursor: pointer;
+    z-index: 2;
+    top: -43px;
 }
 
 .sectiontwo-title .title-about a {
@@ -297,13 +345,12 @@ html {
 }
 
 .sectiontwo-title .title-about p {
-    padding-left:20px;
+    padding-left: 20px;
 }
 
 .sectiontwo-about {
     display: flex;
-    margin-top: 62px;
-    margin-bottom: 20px;
+    margin: 63px 0 20px ;
     z-index: 1;
 }
 
@@ -333,8 +380,9 @@ html {
     color: #ffb416;
 }
 
-.sectiontwo-item .item-sp img:hover {
-    /* transform: scale(1.05); */
+.sectiontwo-item .item-sp img {
+    max-width: 100%;
+    max-height: 100%;
 }
 
 .item-sp .item-sp--name {
@@ -677,7 +725,9 @@ html {
 }
 
 .drop-of-water img {
-    transform: translateX(-10%);   
+    position: relative;
+    left: 50%;
+    transform: translateX(-50%);   
 }
 
 #footer .footer-first {
@@ -1016,41 +1066,6 @@ html {
 
 /* THE END CSS WEB */
 
-/* OWL CAROUSEL */
-.owl-carousel .owl-item img {
-    display: initial;
-    width: 100%;
-}
 
-.owl-item.active:last-child {
-    margin: 0 !important;
-}
 
-.owl-item.active {
-    width: auto !important;
-    margin-right: 28px !important;
-}
-
-.sectionone .owl-item {
-    height: 282px;
-}
-
-.sectionone .owl-stage {
-    width: 1280px !important;
-    display: flex;
-    justify-content: center;
-}
-.sectiontwo .owl-stage {
-    width: auto !important;
-    display: flex;
-    justify-content: center;
-}
-
-/* .sectiontwo .owl-carousel.owl-theme {
-    overflow: hidden;
-} */
-
-.widthslider1210 {
-    width: 1215px;
-}
 /* THE END FIX OWLCAROUSEL */
