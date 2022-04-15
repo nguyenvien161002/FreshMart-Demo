@@ -10,7 +10,7 @@ html {
 
 
 .width_86 {
-    width: 86%;
+    width: 1280px;
 }
 
 .m-lr-auto {
@@ -167,7 +167,8 @@ html {
 }
 
 .nav-right-icon .navright-item {
-    padding: 0px 10px;
+    padding: 0px 13px;
+    position: relative;
 }
 
 .nav-right .ti-search,
@@ -182,6 +183,19 @@ html {
 
 .nav-right-icon {
     position: relative;
+}
+
+.nav-right-icon .notification {
+    position: absolute;
+    width: 17px;
+    height: 17px;
+    background: #ffb416;
+    color: #fff;
+    text-align: center;
+    line-height: 17px;
+    border-radius: 17px;
+    top: -8px;
+    font-size: 12px;
 }
 
 .signupsignin {
@@ -209,7 +223,7 @@ html {
     border: 10px solid;
     border-color: transparent transparent #fff transparent;
     top: -18px;
-    right: 6px;
+    right: 3px;
 }
 
 .signupsignin::before {
@@ -225,6 +239,10 @@ html {
 
 .signupsignin .signin {
     border-bottom: 1px solid #ccc;
+}
+
+.user {
+    margin-top: 4px;
 }
 
 .user:hover .signupsignin {
@@ -367,7 +385,7 @@ html {
     text-align: center;
     position: relative;
     cursor: pointer;
-    margin-left: 15px;
+    margin-left: 11px;
 }
 
 .sectiontwo-item .item-sp {
@@ -532,7 +550,7 @@ html {
 .sectionfour-item {
     border: 1px solid #ccc !important;
     border-radius: 10px ;
-    margin-right: 20px;
+    margin-right: 12px;
     max-width: 221px;
 }
 
@@ -548,7 +566,7 @@ html {
 }
 
 .sectionfour-item .item-rprice {
-    margin: 0px;
+    margin-left: -0.5px;
 }
 
 .sectionfive .sectionfour-about {
@@ -557,7 +575,7 @@ html {
 
 .sectionfive .sectionfour-item {
     margin-left: 0;
-    margin-right: 35px;
+    margin-right: 24px;
 }
 
 .sectionfive-menu {
@@ -866,6 +884,14 @@ html {
     border-radius: 5px;
     overflow: hidden;
     animation: Grow ease-in 0.2s;
+}
+
+.modal__register {
+    /* display: none; */
+}
+
+.modal__login {
+    /* display: none; */
 }
 
 .inner__authform--header {
