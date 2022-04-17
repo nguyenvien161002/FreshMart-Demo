@@ -1,0 +1,219 @@
+/* PC */
+@media (min-width: 64em){
+    .nav-right-icon .ti-align-justify {
+        display: none;
+    }
+}
+/* TABLET */
+@media (min-width: 46.25em) and (max-width:63.9375em){
+    /* Header */
+    .width_94 {
+        width: 94%;
+    }
+
+    .container {
+        justify-content: flex-end;
+    }
+
+    .nav-left,
+    .nav-right-icon .ti-user {
+        display: none;
+    }
+
+    .nav-between-logo {
+        left: 3%;
+        transform: translateX(0);
+    }
+
+    .nav-right-icon .ti-align-justify {
+        margin-right: -10px;
+    }
+    
+    /* SLIDER */
+    #drop-of-water {
+        display: none;
+    }
+    /* CONTENT */
+    #content .content-about {
+        justify-content: space-between;
+        padding: 0;
+        margin-top: 25px;
+    }
+
+    #content .content-item {
+        width: 31.33333%;
+        margin-right: 0;
+    }
+
+    .content-item--img img {
+        box-shadow: 0 0 1px 1px rgba(0, 0, 0, 0.1);
+    }
+
+    /* DROP OF WATER  */
+    #drop-of-water1 {
+        top: -46px;
+    }
+    /* FOOTER */
+    #footer .footer-first .footer-item {
+        width: 100%;
+        padding: 0;
+    }
+
+    #footer .footer-first {
+        display: block;
+    }
+
+    .signup-text {
+        width: 100%;
+    }
+
+    .footer-introduction {
+        margin-top: 20px;
+    }
+
+    .footer-introduction .logofooter {
+        display: none;
+    }
+
+    .footer-contact {
+        margin-top: 20px;
+    }
+
+    .footer-contact > h3 {
+        padding: 0;
+    }
+
+    .footer-last {
+        margin-top: 20px;
+    }
+
+    .footer-copyright-iconcontact div {
+        width: initial;
+        margin-top: 10px;
+    }
+
+    .footer-copyright-iconcontact {
+        display: block;
+    }
+
+}
+/* MOBILE */
+@media (max-width: 46.1875em){
+    /* Header */
+    .width_94 {
+        width: 96%;
+    }
+
+    .container {
+        display: block;
+        padding: 10px 0;
+        position: relative;
+    }
+
+    .nav-between-logo {
+        position: relative;
+        margin-bottom: 10px;
+    }
+
+    .nav-left,
+    .nav-right-icon .ti-user {
+        display: none;
+    }
+
+    .nav-right {
+        display: block;
+    }
+
+    .nav-right .search input {
+        width: 100%;
+    }
+
+    .nav-right-icon {
+        position: absolute;
+        top: 25%;
+        right: 0;
+    }
+
+    .nav-right-icon .navright-item:last-child {
+        padding-right: 0;
+    }
+
+    /* Slider */
+    #slider  #drop-of-water {
+        display: none;
+    }
+
+    /* CONTENT */
+    #content {
+        overflow: hidden;
+    }
+
+    #content .content-about {
+        padding-bottom: 0;
+    }
+
+    #content .content-item {
+        width: initial;
+        margin-right: 0;
+    }
+
+    .content-item--img img {
+        border-radius: 4px;
+        box-shadow: 0 0 1px 1px rgba(0, 0, 0, 0.1);
+    }
+
+    /* DROP OF WATER  */
+    #drop-of-water1 {
+        top: -46px;
+    }
+
+    /* FOOTER */
+    #footer .footer-first {
+        display: block;
+    }
+
+    #footer .footer-item {
+        width: 100% !important;
+        margin-bottom: 15px;
+        padding: 0;
+    }
+
+    .footer-contact > h3,
+    .footer-item .signup-des > h3 {
+        padding-bottom: 7px;
+    }
+
+    .footer-signup .signup-text {
+        width: 100%;
+    }
+
+    .footer-introduction .logofooter {
+        display: none;
+    }
+
+    .footer-contact {
+        margin-top: 0;
+    }
+
+    .footer-last {
+        margin-top: 0;
+    }
+
+    .footer-copyright-iconcontact {
+        display: block;
+    }
+
+    .footer-copyright-iconcontact .copyright {
+        margin-bottom: 10px;
+    }
+
+    .footer-copyright-iconcontact div {
+        width: 100%;
+    }
+
+    .iconcontact .iconcontact-item {
+        padding: 13px;
+        margin: 0;
+    }
+
+}

@@ -25,9 +25,6 @@
         transform: translateX(0);
     }
 
-    .nav-right {
-
-    }
     .nav-right-icon .ti-align-justify {
         margin-right: -10px;
     }
@@ -59,31 +56,36 @@
     .sectionthree-banner.banner1 {
         margin-right: 20px;
     }
+
+    .sectionfour-about {
+        width: 63%;
+        justify-content: space-between;
+    }
     
     .sectionfour-item {
-        margin-right: 0;
+        margin: 0;
         display: flex;
         flex-direction: column;
         justify-content: space-between;
         overflow: hidden;
+        width: 48.4%;
     }
 
     .sectionfour-item .item-sp img {
         padding: 0;
     }
     
-    .sectionfive .sectionfour-item:nth-child(1) {
-        margin-right: 15px;
-    }
-
-    .sectionfour .sectiontwo-item .item-sp:last-child,
-    .sectionfive .sectiontwo-item .item-sp:last-child {
+    .sectiontwo-item .item-sp:last-child {
         margin-bottom: 20px;
     }
 
     .sectionfour-menu {
         width: 35%;
         background-position: 100px 27px;
+    }
+
+    .sectionfive .sectionfour-item {
+        margin: 0;
     }
 
     .sectionseven {
@@ -233,6 +235,15 @@
         margin-top: 50px;
     }
 
+    .sectiontwo-about {
+        margin-top: 40px;
+    }
+
+    .sectiontwo-item .item-rprice {
+        top: -0.5px;
+        left: -0.5px;
+    }
+
     .sectiontwo-title {
         font-size: 18px;
         padding: 5px 15px;
@@ -263,16 +274,18 @@
     .sectionfour-menu {
         padding: 20px;
         height: 60px;
-        margin-bottom: 5px;
+        margin-bottom: 8px;
+        width: initial;
+    }
+
+    .sectionfour-about {
+        width: 100%;
     }
 
     .sectionfour-item {
         margin: 0;
         padding-bottom: 15px;
-    }
-
-    .sectionfour-item:first-child {
-        margin-right: 15px;
+        width: 48.7%;
     }
 
     .sectionfour-menu .menu-ads,
@@ -285,17 +298,9 @@
         display: flex;
         flex-direction: column-reverse;
     }
-
-    .sectionfive .sectionfour-about {
-        margin-right: 0;
-    }
-
+    
     .item-sp .item-sp--name {
         padding: 14px 30px;
-    }
-
-    .sectionfive .sectionfour-item:nth-child(2) {
-        margin-right: 0;
     }
 
     #content .sectionseven {

@@ -164,6 +164,7 @@ html {
     font-size: x-large;
     padding-left: 10px;
     cursor: pointer;
+    position: relative;
 }
 
 .nav-right-icon .navright-item {
@@ -175,14 +176,6 @@ html {
 .nav-right-icon a {
     text-decoration: none;
     color: #fff;
-}
-
-.nav-right a {
-    padding: 0px 10px;
-}
-
-.nav-right-icon {
-    position: relative;
 }
 
 .nav-right-icon .notification {
@@ -388,11 +381,17 @@ html {
     margin-left: 11px;
 }
 
+.sectiontwo-item:visited {
+    background-color: transparent;
+    color: red;
+}
+
 .sectiontwo-item .item-sp {
     font-size: 15px;
     max-width: 227px;
     overflow: hidden;
 }
+
 
 .sectiontwo-item .item-sp > a:hover {
     color: #ffb416;
@@ -400,7 +399,12 @@ html {
 
 .sectiontwo-item .item-sp img {
     max-width: 100%;
-    max-height: 100%;
+    transition: all 0.5s;
+}
+
+.sectiontwo-item:hover .item-sp img {
+    transform: scale(1.05);
+    transition: all 0.5s;
 }
 
 .item-sp .item-sp--name {
@@ -418,6 +422,9 @@ html {
     color: #fff;
     font-weight: 550;
     font-size: 14px ;
+    z-index: 1;
+    top: 0;
+    left: 0;
 }
 
 .item-sp-price {
@@ -455,19 +462,21 @@ html {
 
 .sectionthree-banner {
     max-width: 630px;
-    border-radius: 20px;
-    overflow: hidden;
     max-height: 280px;
+    overflow: hidden;
+    border-radius: 20px;
 }
 
 .sectionthree-banner img {
     max-width: 100%;
     transition: all 0.5s ease;
+    border-radius: 20px;
+    vertical-align: middle;
 }
 
 .sectionthree-banner img:hover {
     cursor: pointer;
-    transform: scale(1.05);
+    transform: scale(1.1);
     transition: all ease 0.5s;
  }
  
@@ -479,10 +488,10 @@ html {
 }
 
 .sectionfour-menu {
+    width: 24%;
     border-radius: 20px;
     background-color: #fbf1eb;
     padding: 30px 35px;
-    padding-right: 115px;
     background-image: url(../images/tree—fruits.png);
     background-size: cover;
     background-repeat: no-repeat;
@@ -545,13 +554,15 @@ html {
 
 .sectionfour-about {
     display: flex;
+    width: 74.425%;
+    justify-content: space-between;
 }
 
 .sectionfour-item {
     border: 1px solid #ccc !important;
     border-radius: 10px ;
-    margin-right: 12px;
-    max-width: 221px;
+    margin: 0;
+    width: 23.4%;
 }
 
 .sectionfour-item:last-child {
@@ -559,30 +570,16 @@ html {
 }
 
 .sectionfour-item .item-sp img {
-    max-width: 100%;
-    max-height: 100%;
+   
     margin: 0px;
     padding: 10px;
 }
 
-.sectionfour-item .item-rprice {
-    margin-left: -0.5px;
-}
-
-.sectionfive .sectionfour-about {
-    margin-right: -20px ;
-}
-
-.sectionfive .sectionfour-item {
-    margin-left: 0;
-    margin-right: 24px;
-}
-
 .sectionfive-menu {
+    width: 24%;
     border-radius: 20px;
     background-color: #fbeafb;
     padding: 30px 35px;
-    padding-right: 115px;
     background-image: url(../images/tree—vegetable.png);
     background-size: cover;
     background-repeat: no-repeat;
@@ -891,7 +888,7 @@ html {
 }
 
 .modal__login {
-    /* display: none; */
+    display: none;
 }
 
 .inner__authform--header {

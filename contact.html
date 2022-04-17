@@ -8,27 +8,28 @@
     <title>Liên hệ | Fresh Mart</title>
     <link rel="stylesheet" href="./assets/themify-icons-font/themify-icons/themify-icons.css">
     <link rel="stylesheet" href="./assets/css/contact.css">
+    <link rel="stylesheet" href="./assets/css/rpscontact.css">
 </head>
 <body>
     <div id="header">
-        <div class="container width1280">
+        <div class="container width_86 width_94">
             <div class="nav-left">
                 <ul id="nav">
                     <li class="nav-item">
-                        <a href="./index.html" class="header-nav-home" >Trang chủ</a>
+                        <a href="#" class="header-nav-home" >Trang chủ</a>
                     </li>
                     <li class="nav-item">
-                        <a href="#">Giới thiệu</a>
+                        <a href="./introduction.html">Giới thiệu</a>
                     </li>
                     <li class="nav-item nav-product ">
                         <div class="nav-product">
                             <a href="./products.html">Sản phẩm <i class="ti-arrow-circle-down nav-arrow-icon"></i></a>
                         </div>
                         <ul class="subnav">
-                            <li class="subnav-item"><a href="#">Trái cây</a></li>
-                            <li class="subnav-item"><a href="#">Thịt tươi</a></li>
-                            <li class="subnav-item"><a href="#">Hải sản tươi</a></li>
-                            <li class="subnav-item"><a href="#">Rau củ </a></li>
+                            <li class="subnav-item"><a href="./subnavfruits.html">Trái cây</a></li>
+                            <li class="subnav-item"><a href="./subnavbeats.html">Thịt tươi</a></li>
+                            <li class="subnav-item"><a href="./subnavseafood.html">Hải sản tươi</a></li>
+                            <li class="subnav-item"><a href="./subnavvagetable.html">Rau củ </a></li>
                             <li class="subnav-item"><a href="#">Thực phẩm khô</a></li>
                             <li class="subnav-item"><a href="#">Đồ uống</a></li>
                             <li class="subnav-item"><a href="#">Bơ sữa</a></li>
@@ -55,14 +56,28 @@
                     <a href="#" class="ti-search"></a>
                 </div>
                 <div class="nav-right-icon">
-                    <a href="#" class="navright-item ti-heart"></a>
-                    <a href="#" class="navright-item ti-shopping-cart"></a>
-                    <a href="#" class="navright-item ti-user"></a>
-                    <!-- <a href="#" class="navright-item ti-align-justify"> </a> -->
+                    <a href="#" class="navright-item ti-heart">
+                        <span class="notification">0</span>
+                    </a>
+                    <a href="#" class="navright-item ti-bag">
+                        <span class="notification">0</span>
+                    </a>
+                    <div class="user">
+                        <a href="#" class="navright-item ti-user"></a>  
+                        <div class="signupsignin">
+                            <div class="signupsignin-item signin">
+                                <a href="">Đăng nhập</a>
+                            </div>
+                            <div class="signupsignin-item signup">
+                                <a href="">Đăng ký</a>
+                            </div>
+                        </div>
+                    </div>
+                    <a href="#" class="navright-item ti-align-justify"></a>
                 </div>
             </div>
         </div>
-    </div> 
+    </div>  
     <!-- SILDER -->
     <div id="slider">
         <div id="drop-of-water">
@@ -76,12 +91,12 @@
     </div>
     <!-- CONTENT -->
     <div id="content">
-        <div class="content-about width1280 m-lr-auto">
+        <div class="content-about width_86 width_94 m-lr-auto">
             <div class="content-item content-map">
                 <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d7671.485285511319!2d108.2511845500182!3d15.974810623437047!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3142108997dc971f%3A0x1295cb3d313469c9!2sVietnam%20-%20Korea%20University%20of%20Information%20and%20Communication%20Technology.!5e0!3m2!1sen!2sus!4v1648571429729!5m2!1sen!2sus" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
             </div>
             <div class="content-item content-infoandform">
-                <div class="content-contact--info">
+                <div class="content-contact--info content-infoandform-item">
                     <div>
                         <h2>Thông tin liên lạc</h2>
                         <p>Website thương mại điện tử ND Fresh do ND Group là đơn vị chủ quản, chịu trách nhiệm và thực hiện các giao dịch liên quan mua sắm sản phẩm hàng hoá tiêu dùng thiết yếu.</p>
@@ -90,7 +105,7 @@
                     <p>Điện thoại: <a>0332670579</a></p>
                     <p>Email: <a>support@gmail.com.vn</a></p>
                 </div>
-                <div class="content-contact-form">
+                <div class="content-contact-form content-infoandform-item">
                     <div class="form-personal">
                         <div class="form-peronal--item">
                             <label for="fullname">Họ và tên</label>
@@ -117,13 +132,13 @@
         </div>
     </div>
       <!-- FOOTER -->
-      <div id="drop-of-water1">
-        <div class="drop-of-water">
-            <img src="./assets/images/bg-before-footer.webp" alt="">
-        </div>
-    </div>
     <div id="footer">
-        <div class="footer-first width1280 m-lr-auto ">
+        <div id="drop-of-water1">
+            <div class="drop-of-water">
+                <img src="./assets/images/bg-before-footer.webp" alt="">
+            </div>
+        </div>
+        <div class="footer-first width_86 width_94 m-lr-auto ">
             <div class="footer-item footer-signup">
                 <div class="signup-des">
                     <h3>ĐĂNG KÝ NHẬN THÔNG TIN</h3>
@@ -159,12 +174,12 @@
                     <p>Điện thoại: </p><a>0332670569</a>
                 </div>
                 <div>
-                    <p>Email: </p><a>support@gmail.com.vn</a>
+                    <p>Email: </p><a>viennv.21it@vku.udn.vn</a>
                 </div>
             </div>
         </div>
         <div class="footer-last">
-            <div class="footer-copyright-iconcontact width1280 m-lr-auto">
+            <div class="footer-copyright-iconcontact width_94 width_86 m-lr-auto">
                 <div class="copyright">
                     <p>@ Bản quyền thuộc về Fresh Mart | Cung cấp bởi Nguyễn Viên</p>
                 </div>
