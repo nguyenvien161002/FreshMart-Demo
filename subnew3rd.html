@@ -9,27 +9,28 @@
     <link rel="icon" type="image/x-icon" href="./assets/images/logo2.webp">
     <link rel="stylesheet" href="./assets/fontawesome-free-6.1.1/fontawesome-free-6.1.1-web/css/all.min.css">
     <link rel="stylesheet" href="./assets/css/subnews.css">
+    <link rel="stylesheet" href="./assets/css/rpssubnews.css">
 </head>
 <body>
     <div id="header">
-        <div class="container width1280">
+        <div class="container width_86 width_94">
             <div class="nav-left">
                 <ul id="nav">
                     <li class="nav-item">
-                        <a href="./index.html" class="header-nav-home" >Trang chủ</a>
+                        <a href="#" class="header-nav-home" >Trang chủ</a>
                     </li>
                     <li class="nav-item">
                         <a href="./introduction.html">Giới thiệu</a>
                     </li>
                     <li class="nav-item nav-product ">
                         <div class="nav-product">
-                            <a href="#">Sản phẩm <i class="ti-arrow-circle-down nav-arrow-icon"></i></a>
+                            <a href="./products.html">Sản phẩm <i class="ti-arrow-circle-down nav-arrow-icon"></i></a>
                         </div>
                         <ul class="subnav">
                             <li class="subnav-item"><a href="./subnavfruits.html">Trái cây</a></li>
-                            <li class="subnav-item"><a href="#">Thịt tươi</a></li>
-                            <li class="subnav-item"><a href="#">Hải sản tươi</a></li>
-                            <li class="subnav-item"><a href="#">Rau củ </a></li>
+                            <li class="subnav-item"><a href="./subnavbeats.html">Thịt tươi</a></li>
+                            <li class="subnav-item"><a href="./subnavseafood.html">Hải sản tươi</a></li>
+                            <li class="subnav-item"><a href="./subnavvagetable.html">Rau củ </a></li>
                             <li class="subnav-item"><a href="#">Thực phẩm khô</a></li>
                             <li class="subnav-item"><a href="#">Đồ uống</a></li>
                             <li class="subnav-item"><a href="#">Bơ sữa</a></li>
@@ -56,14 +57,28 @@
                     <a href="#" class="ti-search"></a>
                 </div>
                 <div class="nav-right-icon">
-                    <a href="#" class="navright-item ti-heart"></a>
-                    <a href="#" class="navright-item ti-shopping-cart"></a>
-                    <a href="#" class="navright-item ti-user"></a>
-                    <!-- <a href="#" class="navright-item ti-align-justify"> </a> -->
+                    <a href="#" class="navright-item ti-heart">
+                        <span class="notification">0</span>
+                    </a>
+                    <a href="#" class="navright-item ti-bag">
+                        <span class="notification">0</span>
+                    </a>
+                    <div class="user">
+                        <a href="#" class="navright-item ti-user"></a>  
+                        <div class="signupsignin">
+                            <div class="signupsignin-item signin">
+                                <a href="">Đăng nhập</a>
+                            </div>
+                            <div class="signupsignin-item signup">
+                                <a href="">Đăng ký</a>
+                            </div>
+                        </div>
+                    </div>
+                    <a href="#" class="navright-item ti-align-justify"></a>
                 </div>
             </div>
         </div>
-    </div> 
+    </div>
     <!-- SILDER -->
     <div id="slider">
         <div id="drop-of-water">
@@ -78,7 +93,7 @@
     </div>
     <!-- CONTENT -->
     <div id="content">
-        <div class="content-about width1280 m-lr-auto">
+        <div class="content-about width_86 width_94 m-lr-auto">
             <div class="sidebar">
                 <!-- Product Category: danh mục sản phẩm -->
                 <div class="sidebar-item">
@@ -188,13 +203,13 @@
         </div>
     </div>
     <!-- FOOTER -->
-    <div id="drop-of-water1">
-        <div class="drop-of-water">
-            <img src="./assets/images/bg-before-footer.webp" alt="">
-        </div>
-    </div>
     <div id="footer">
-        <div class="footer-first width1280 m-lr-auto ">
+        <div id="drop-of-water1">
+            <div class="drop-of-water">
+                <img src="./assets/images/bg-before-footer.webp" alt="">
+            </div>
+        </div>
+        <div class="footer-first width_86 width_94 m-lr-auto ">
             <div class="footer-item footer-signup">
                 <div class="signup-des">
                     <h3>ĐĂNG KÝ NHẬN THÔNG TIN</h3>
@@ -235,7 +250,7 @@
             </div>
         </div>
         <div class="footer-last">
-            <div class="footer-copyright-iconcontact width1280 m-lr-auto">
+            <div class="footer-copyright-iconcontact width_94 width_86 m-lr-auto">
                 <div class="copyright">
                     <p>@ Bản quyền thuộc về Fresh Mart | Cung cấp bởi Nguyễn Viên</p>
                 </div>
