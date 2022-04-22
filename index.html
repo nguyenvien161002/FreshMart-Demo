@@ -61,17 +61,17 @@
                         <a href="#" class="navright-item ti-heart">
                             <span class="notification">0</span>
                         </a>
-                        <a href="#" class="navright-item ti-bag">
+                        <a href="#" class="navright-item ti-bag js-btn-cartshopping">
                             <span class="notification">0</span>
                         </a>
                         <div class="user">
                             <a href="#" class="navright-item ti-user"></a>  
                             <div class="signupsignin">
                                 <div class="signupsignin-item signin">
-                                    <a href="">Đăng nhập</a>
+                                    <button class="btn btn-login js-btn-login">Đăng nhập</button>
                                 </div>
                                 <div class="signupsignin-item signup">
-                                    <a href="">Đăng ký</a>
+                                    <button class="btn btn-register js-btn-register">Đăng ký</button>
                                 </div>
                             </div>
                         </div>
@@ -80,13 +80,13 @@
                 </div>
             </div>
         </div> 
-        <!-- Slider -->
+        <!-- SLIDER -->
         <div id="slider">
             <div id="drop-of-water">
                 <img src="./assets/images/bg-after-header.webp" alt="">
             </div>
         </div>
-        <!-- Content -->
+        <!-- CONTENT -->
         <div id="content">
             <div class="sectionone width_86 width_94 m-lr-auto">
                 <div class="sectionone-item">
@@ -640,7 +640,7 @@
                 </div>
             </div>
         </div>
-        <!-- Footer -->
+        <!-- FOOTER -->
         <div id="footer">
             <div id="drop-of-water1">
                 <div class="drop-of-water">
@@ -704,12 +704,12 @@
         </div>
         <!-- Start learning the rules for naming classes BEM: bắt đầu
         học đặt tên class BEM -->
-        <div class="modal">
+        <div class="modal js-modal">
             <div class="modal__overlay"></div>
-            <div class="modal__registerlogin">
+            <div class="modal__registerlogin js-modal__registerlogin">
                 <!-- Register -->
                 <!-- Terms and policy: điều khoản và dịch vụ -->
-                <div class="modal__inner modal__register">
+                <div class="modal__inner modal__register js-modal__register">
                     <div class="inner__authform--header">
                         <img src="./assets/images/logo.webp" alt="">
                         <p>Đăng ký</p>
@@ -736,8 +736,8 @@
                             </div>
                         </div>
                         <div class="inner__authform--controls">
-                            <button>HỦY</button>
-                            <button>ĐĂNG KÝ</button>
+                            <button class="btn-cancel js-btn-cancel">HỦY</button>
+                            <button class="btn-registerModal js-btnregisterModal">ĐĂNG KÝ</button>
                         </div>
                     </div>
                     <div class="inner__authform--socials">
@@ -750,7 +750,7 @@
                     </div>
                 </div> 
                 <!-- LogIn -->
-               <div class="modal__inner modal__login"> 
+                <div class="modal__inner modal__login js-modal__login"> 
                     <div class="inner__authform--header">
                         <img src="./assets/images/logo.webp" alt="">
                         <p>Đăng nhập</p>
@@ -772,8 +772,8 @@
                             </div>
                         </div>
                         <div class="inner__authform--controls">
-                            <button>HỦY</button>
-                            <button>ĐĂNG KÝ</button>
+                            <button class="btn-cancel js-btn-cancel">HỦY</button>
+                            <button class="btn-registerModal js-btnregisterModal">ĐĂNG KÝ</button>
                         </div>
                     </div>
                     <div class="inner__authform--socials">
@@ -786,20 +786,21 @@
                     </div>
                 </div>  
             </div>
-            <!-- <div class="modal__cartshopping">
+            <div class="modal__cartshopping js-modal__cartshopping">
                 <div class="modal__cartshpping--inner">
                     <div class="modal__cartshopping--header">
                         <h3>GIỎ HÀNG</h3>
-                        <i class="ti-close cartshopping--icon "></i>
+                        <button class="ti-close cartshopping--icon js-btn-close"></button>
                     </div>
                     <div class="modal__cartshopping--content">
                         <img src="./assets/images/mobile-shopping.svg" alt="">
                         <button class="btn--continueshopping">Tiếp tục mua hàng</button>
                     </div>
                 </div>
-            </div> -->
+            </div>
         </div>
     </div>
     <!-- JAVASCRIP -->
+    <script src="./assets/js/index.js"></script>
 </body>
 </html>

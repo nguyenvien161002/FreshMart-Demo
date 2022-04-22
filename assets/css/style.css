@@ -203,11 +203,19 @@ html {
     display: none;
 }
 
-.signupsignin a {
+.signupsignin .btn {
     color: #000;
-    font-size: 16px;
-    display: block;
+    font-size: 15px;
     padding: 8px 25px;
+    border: none;
+    background-color: #fff;
+    cursor: pointer;
+    border-radius: 4px;
+    width: 100%;
+}
+
+.signupsignin .btn:hover {
+    color: #ffb416;
 }
 
 .signupsignin::after {
@@ -257,7 +265,6 @@ html {
 }
 
 /* Drop of water */
-
 #drop-of-water {
     position: absolute;
     top: 0;
@@ -863,6 +870,14 @@ html {
     display: none;
 }
 
+.open {
+    display: flex;
+}
+
+.hidden {
+    display: none;
+}
+
 .modal__overlay {
     position: absolute;
     width: 100%;
@@ -878,15 +893,16 @@ html {
     width: 500px;
     border-radius: 5px;
     overflow: hidden;
-    animation: Grow ease-in 0.2s;
+    animation: modalAnimations ease 0.5s;
 }
 
-.modal__register {
-    /* display: none; */
-}
-
-.modal__login {
-    display: none;
+@keyframes modalAnimations {
+    from {
+        transform: translateY(-150px);
+    } 
+    to {
+        transform: translateY(0);
+    }
 }
 
 .inner__authform--header {
@@ -1041,10 +1057,26 @@ html {
     background-color: white;
     z-index: 2;
     width: 340px;
+    height: 100%;
+    position: fixed;
+    right: 0;
+    animation: modalCartAnimations ease 0.4s;
+}
+
+@keyframes modalCartAnimations {
+    from {
+        transform: translateX(-70%);
+        opacity: 0;
+    }
+    to {
+        transform: translateX(0);
+        opacity: 1;
+    }
 }
 
 .modal__cartshpping--inner {
     padding: 10px;
+    width: 100%;
 }
 
 .modal__cartshopping--header {
@@ -1052,6 +1084,18 @@ html {
     justify-content: space-between;
     align-items: center;
     padding: 5px;
+}
+
+.cartshopping--icon {
+    font-weight: 600;
+    border: none;
+    background-color: #ffffff;
+    cursor: pointer;
+    transition: transform ease-in-out 0.4s, opacity 0.4s ease-in-out;
+}
+
+.cartshopping--icon:hover {
+    transform: translate(0%, 0%) rotate(360deg);
 }
 
 .modal__cartshopping--content {
@@ -1086,7 +1130,3 @@ html {
 
 
 /* THE END CSS WEB */
-
-
-
-/* THE END FIX OWLCAROUSEL */
