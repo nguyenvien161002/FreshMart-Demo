@@ -10,6 +10,7 @@
     <link rel="stylesheet" href="./assets/fontawesome-free-6.1.1/fontawesome-free-6.1.1-web/css/all.min.css">
     <link rel="stylesheet" href="./assets/css/product.css">
     <link rel="stylesheet" href="./assets/css/rpsproduct.css">
+    <link rel="stylesheet" href="./assets/css/modal.css">
 </head>
 <body>
     <div id="header">
@@ -17,7 +18,7 @@
             <div class="nav-left">
                 <ul id="nav">
                     <li class="nav-item">
-                        <a href="#" class="header-nav-home" >Trang chủ</a>
+                        <a href="./index.html" class="header-nav-home" >Trang chủ</a>
                     </li>
                     <li class="nav-item">
                         <a href="./introduction.html">Giới thiệu</a>
@@ -56,26 +57,32 @@
                     <input type="text" placeholder="Bạn cần tìm gì?">
                     <a href="#" class="ti-search"></a>
                 </div>
-                <div class="nav-right-icon">
-                    <a href="#" class="navright-item ti-heart">
-                        <span class="notification">0</span>
-                    </a>
-                    <a href="#" class="navright-item ti-bag">
-                        <span class="notification">0</span>
-                    </a>
-                    <div class="user">
+                <ul class="nav-right-list">
+                    <li class="list--item">
+                        <a href="./favorite.html" class="navright-item ti-heart">
+                            <span class="notification">0</span>
+                        </a>
+                    </li>
+                    <li class="list--item">
+                        <a href="#" class="navright-item ti-bag js-btn-cartshopping">
+                            <span class="notification">0</span>
+                        </a>
+                    </li>
+                    <li class="list--item user">
                         <a href="#" class="navright-item ti-user"></a>  
                         <div class="signupsignin">
                             <div class="signupsignin-item signin">
-                                <a href="">Đăng nhập</a>
+                                <button class="btn btn-login js-btn-login">Đăng nhập</button>
                             </div>
                             <div class="signupsignin-item signup">
-                                <a href="">Đăng ký</a>
+                                <button class="btn btn-register js-btn-register">Đăng ký</button>
                             </div>
                         </div>
-                    </div>
-                    <a href="#" class="navright-item ti-align-justify"></a>
-                </div>
+                    </li>
+                    <li class="list--item">
+                        <a href="#" class="navright-item ti-align-right js-btn-sidebar"></a>
+                    </li>
+                </ul>
             </div>
         </div>
     </div> 
@@ -323,5 +330,102 @@
             </div>
         </div>
     </div>
+    <!-- MODAL -->
+    <div class="modal js-modal">
+        <div class="modal__overlay"></div>
+        <div class="modal__registerlogin js-modal__registerlogin">
+            <!-- Register -->
+            <!-- Terms and policy: điều khoản và dịch vụ -->
+            <div class="modal__inner modal__register js-modal__register">
+                <div class="inner__authform--header">
+                    <img src="./assets/images/logo.webp" alt="">
+                    <p>Đăng ký</p>
+                </div>
+                <div class="inner__authform--body">
+                    <div class="inner__authform--form">
+                        <div class="authform__item">
+                            <label for="text">Tài khoản</label>
+                            <input type="text" name="" placeholder="Email hoặc số điện thoại">
+                        </div>
+                        <div class="authform__item">
+                            <label for="password">Mật khẩu</label>
+                            <input type="password" name="" placeholder="Mật khẩu của bạn">
+                        </div>
+                        <div class="authform__item">
+                            <label for="password">Nhập lại mật khẩu</label>
+                            <input type="password" name="" placeholder="Nhập lại mật khẩu">
+                        </div>
+                        <div class="termsandpolicy">
+                            <p>Bằng việc đăng kí, bạn đã đồng ý với Fresh Mart về 
+                                <a href="">Điều khoản dịch vụ</a>
+                                & <a href="">Chính sách bảo mật</a>
+                            </p>
+                        </div>
+                    </div>
+                    <div class="inner__authform--controls">
+                        <button class="btn-cancel js-btn-cancel">HỦY</button>
+                        <button class="btn-registerModal js-btnregisterModal">ĐĂNG KÝ</button>
+                    </div>
+                </div>
+                <div class="inner__authform--socials">
+                    <div class="authform--socials-item authform--socialsFb">
+                        <a href="" class=""><i class="fa-brands fa-facebook-square"></i>Kết nối với Facebook</a>
+                    </div>
+                    <div class="authform--socials-item authform--socialsGg">
+                        <a href="" class=""><img src="./assets/images/icon-ggofcolor.png" alt="">Kết nối với Google</a>
+                    </div>
+                </div>
+            </div> 
+            <!-- LogIn -->
+            <div class="modal__inner modal__login js-modal__login"> 
+                <div class="inner__authform--header">
+                    <img src="./assets/images/logo.webp" alt="">
+                    <p>Đăng nhập</p>
+                </div>
+                <div class="inner__authform--body">
+                    <div class="inner__authform--form">
+                        <div class="authform__item">
+                            <label for="text">Tài khoản</label>
+                            <input type="text" name="" placeholder="Email hoặc số điện thoại">
+                        </div>
+                        <div class="authform__item">
+                            <label for="password">Mật khẩu</label>
+                            <input type="password" name="" placeholder="Mật khẩu của bạn">
+                        </div>
+                        <div class="authform__help">
+                            <a href="#" class="authform__help--forgot">Quên mật khẩu</a>
+                            <span class="authform__help--separate"></span>
+                            <a href="#" class="authform__help--help">Cần trợ giúp?</a>
+                        </div>
+                    </div>
+                    <div class="inner__authform--controls">
+                        <button class="btn-cancel js-btn-cancel">HỦY</button>
+                        <button class="btn-registerModal js-btnregisterModal">ĐĂNG KÝ</button>
+                    </div>
+                </div>
+                <div class="inner__authform--socials">
+                    <div class="authform--socials-item authform--socialsFb">
+                        <a href="" class=""><i class="fa-brands fa-facebook-square"></i>Kết nối với Facebook</a>
+                    </div>
+                    <div class="authform--socials-item authform--socialsGg">
+                        <a href="" class=""><img src="./assets/images/icon-ggofcolor.png" alt="">Kết nối với Google</a>
+                    </div>
+                </div>
+            </div>  
+        </div>
+        <div class="modal__cartshopping js-modal__cartshopping">
+            <div class="modal__cartshpping--inner">
+                <div class="modal__cartshopping--header">
+                    <h3>GIỎ HÀNG</h3>
+                    <button class="ti-close cartshopping--icon js-btn-close"></button>
+                </div>
+                <div class="modal__cartshopping--content">
+                    <img src="./assets/images/mobile-shopping.svg" alt="">
+                    <button class="btn--continueshopping">Tiếp tục mua hàng</button>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script src="./assets/js/index.js"></script>
 </body>
 </html>

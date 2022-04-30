@@ -1,0 +1,340 @@
+/* MODAL */
+.modal {
+    position: fixed;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    display: flex;
+    z-index: 100;
+    display: none;
+}
+
+.open {
+    display: flex;
+}
+
+.hidden {
+    display: none;
+}
+
+.modal__overlay {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.4);
+    z-index: 1;
+}
+
+.modal__registerlogin {
+    z-index: 2;
+    background-color: white;
+    margin: auto;
+    width: 500px;
+    border-radius: 5px;
+    overflow: hidden;
+    animation: modalAnimations ease 0.5s;
+}
+
+@keyframes modalAnimations {
+    from {
+        transform: translateY(-150px);
+    } 
+    to {
+        transform: translateY(0);
+    }
+}
+
+.inner__authform--header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 20px 30px;
+    background-color: #3ba66b;
+    color: white;
+}
+
+.inner__authform--body {
+    padding: 30px;
+}
+
+.inner__authform--header > p {
+    font-size: 30px;
+    font-weight: 600;
+}
+
+.inner__authform--header > span {
+    font: 18px;
+    font-weight: 500;
+}
+
+.inner__authform--form .authform__item {
+    display: flex;
+    flex-direction: column;
+    padding: 8px 0;
+}
+
+.authform__item label {
+    padding-bottom: 5px;
+}
+
+.authform__item input {
+    padding: 12px;
+    border-radius: 3px;
+    border: 1px solid #ccc;
+    outline: none;
+    background-color: rgb(243, 240, 240);
+}
+
+.authform__item input:focus {
+    border-color: #888;
+}
+
+.termsandpolicy {
+    text-align: center;
+    margin: 20px 0 60px;
+}
+
+.termsandpolicy a {
+    text-decoration: none;
+    color: #2e8053;
+}
+
+.authform__help {
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+    margin: 10px 0 60px;
+}
+
+.authform__help a {
+    text-decoration: none;
+    font-weight: 500;
+}
+
+.authform__help--forgot {
+    color: #3ba66b;
+}
+
+.authform__help--help {
+    color: #888;
+}
+
+.authform__help--separate {
+    display: block;
+    border-left: 1px solid #ccc;
+    margin: 0 10px;
+    height: 22px;
+}
+
+.inner__authform--controls {
+    display: flex;
+    justify-content: right;
+}
+
+.inner__authform--controls > button {
+    padding: 15px 28px;
+    margin-left: 10px;
+    border: 1px solid #ccc;
+    background-color: #3ba66b;
+    border-radius: 5px;
+    color: white;
+    font-weight: 500;
+    cursor: pointer;
+}
+
+.inner__authform--socials {
+    background-color: rgb(231, 231, 231);
+    display: flex;
+    justify-content: space-around;
+}
+
+.inner__authform--socials a {
+    text-decoration: none;
+    font-weight: 500;
+}
+
+.authform--socials-item {
+    padding: 10px;
+    margin: 10px 0px;
+    width: 220px;
+    border-radius: 3px;
+    font-size: 15px;
+}
+
+.authform--socialsFb {
+    background-color: #217efc;
+    margin-left: 23px;
+}
+
+.authform--socialsFb i {
+    font-size: x-large;
+    margin-right: 10px;
+}
+
+.authform--socialsGg {
+    background-color: white;
+    margin-right: 23px;
+}
+
+.authform--socialsGg img {
+    width: 22px;
+    margin-right: 10px;
+}
+
+.authform--socialsFb a,
+.authform--socialsGg a {
+    display: flex;
+    align-items: center;
+    color: white;
+}
+
+.authform--socialsGg a  {
+    color: rgb(84, 83, 83);
+}
+
+/* MODAL CART SHOPPING */
+.modal__cartshopping {
+    background-color: white;
+    z-index: 2;
+    width: 340px;
+    height: 100%;
+    position: fixed;
+    right: 0;
+    animation: modalCartAnimations ease 0.5s;
+}
+
+@keyframes modalCartAnimations {
+    from {
+        transform: translateX(70%);
+        opacity: 0;
+    }
+    to {
+        transform: translateX(0);
+        opacity: 1;
+    }
+}
+
+.modal__cartshpping--inner {
+    padding: 10px;
+    width: 100%;
+}
+
+.modal__cartshopping--header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 5px;
+}
+
+.cartshopping--icon {
+    font-weight: 600;
+    border: none;
+    background-color: #ffffff;
+    cursor: pointer;
+    transition: 0.4s ease-in-out;
+}
+
+.cartshopping--icon:hover {
+    transform: rotate(360deg);
+}
+
+.modal__cartshopping--content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 25px 0 0 ;
+}
+
+.modal__cartshopping--content img{
+    height: 200px;
+    width: 200px;
+}
+
+.btn--continueshopping {
+    bottom: 0;
+    padding: 12px 30px;
+    margin-top: 20px;
+    border: none;
+    border-radius: 5px;
+    background-color: #3ba66b;
+    font-size: 16px;
+    color: white;
+}
+
+.btn--continueshopping:hover {
+    background-color: #2e8053;
+    cursor: pointer;
+}
+/* MODAL SIDEBAR */
+.modal__sidebar {
+    position: absolute;
+    z-index: 10;
+    background-color: #fff;
+    width: 60%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    padding: 16px 0 0 32px;
+    animation: modalSidebarAni ease 0.4s ;
+}
+
+@keyframes modalSidebarAni {
+    from {
+        transform: translateX(-70%);
+        opacity: 0;
+    }
+    to {
+        transform: translateX(0);
+        opacity: 1;
+    }
+}
+
+
+.sidebar__login {
+    border-bottom: 1px solid rgb(215, 215, 215);
+}
+
+.sidebar__login-inner {
+    padding: 20px 0 20px 20px;
+    color: #757575;
+    margin-bottom: 12px;
+    list-style: none;
+    border-radius: 10px 0 0 10px;
+}
+
+.sidebar__login-inner i {
+    margin-right: 16px;
+}
+
+.sidebar--btn-login {
+    color: #333;
+}
+
+.modal__sidebar--list {
+    margin: 12px 0;
+}
+
+.modal__sidebar--item {
+    padding: 20px 0 20px 20px;
+    color: #757575;
+    list-style: none;
+    border-radius: 10px 0 0 10px;
+}
+
+.modal__sidebar--item i {
+    width: 18px;
+    margin-right: 16px;
+}
+
+.modal__sidebar--item a {
+    text-decoration: none;
+    color: #333;
+}
+
+.sidebar__login-inner:hover,
+.modal__sidebar--item:hover {
+    background: #f0f0f0;
+}
+
+/* THE END CSS MODAL */

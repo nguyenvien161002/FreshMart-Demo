@@ -1,6 +1,6 @@
 /* PC */
 @media (min-width: 64em){
-    .nav-right-icon .ti-align-justify {
+    .list--item:last-child {
         display: none;
     }
 }
@@ -16,7 +16,7 @@
     }
 
     .nav-left,
-    .nav-right-icon .ti-user {
+    .user {
         display: none;
     }
 
@@ -116,7 +116,7 @@
     }
 
     .nav-left,
-    .nav-right-icon .ti-user {
+    .user {
         display: none;
     }
 
@@ -128,13 +128,13 @@
         width: 100%;
     }
 
-    .nav-right-icon {
+    .nav-right-list {
         position: absolute;
         top: 25%;
         right: 0;
     }
 
-    .nav-right-icon .navright-item:last-child {
+    .navright-item:last-child {
         padding-right: 0;
     }
 

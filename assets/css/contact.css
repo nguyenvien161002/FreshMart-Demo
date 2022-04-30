@@ -5,7 +5,7 @@
 }
 
 html {
-    font-family: 'Times New Roman', Times, serif, Helvetica, sans-serif;
+    font-family: Arial, Helvetica, sans-serif;
 }
 
 
@@ -54,7 +54,7 @@ html {
 #nav .nav-item a {
     color: #fff;
     text-decoration: none;
-    font-size: 16px;
+    font-size: 15px;
     padding: 0px 15px;
     display: flex;
     align-items: flex-end;
@@ -158,27 +158,27 @@ html {
     cursor: pointer;
 }
 
-.nav-right-icon {
+.nav-right-list {
+    list-style: none;
     display: flex;
     align-items: center;
     font-size: x-large;
-    padding-left: 10px;
-    cursor: pointer;
-    position: relative;
+    margin-left: 10px;
+    margin-right: -10px;
 }
 
-.nav-right-icon .navright-item {
-    padding: 0px 13px;
+.nav-right-list .list--item {
+    padding: 10px 12px;
     position: relative;
 }
 
 .nav-right .ti-search,
-.nav-right-icon a {
+.nav-right-list a {
     text-decoration: none;
     color: #fff;
 }
 
-.nav-right-icon .notification {
+.notification {
     position: absolute;
     width: 17px;
     height: 17px;
@@ -187,13 +187,13 @@ html {
     text-align: center;
     line-height: 17px;
     border-radius: 17px;
-    top: -8px;
+    top: 0px;
     font-size: 12px;
 }
 
 .signupsignin {
     position: absolute;
-    right: 0;
+    right: 8px;
     background-color: white;
     border-radius: 4px;
     box-shadow: 0px 2px 6px 0px rgb(50 50 50 / 33%);
@@ -203,11 +203,19 @@ html {
     display: none;
 }
 
-.signupsignin a {
+.signupsignin .btn {
     color: #000;
-    font-size: 16px;
-    display: block;
-    padding: 8px 25px;
+    font-size: 15px;
+    padding: 10px;
+    border: none;
+    background-color: #fff;
+    cursor: pointer;
+    border-radius: 4px;
+    width: 125px;
+}
+
+.signupsignin .btn:hover {
+    color: #ffb416;
 }
 
 .signupsignin::after {
@@ -234,18 +242,9 @@ html {
     border-bottom: 1px solid #ccc;
 }
 
-.user {
-    margin-top: 4px;
-}
-
 .user:hover .signupsignin {
     display: block;
 }
-
-.nav-right-icon .ti-user {
-    margin-right: -10px;
-}
-
 /* SLIDER */
 #slider {
     height: 200px;

@@ -17,7 +17,7 @@
             <div class="nav-left">
                 <ul id="nav">
                     <li class="nav-item">
-                        <a href="#" class="header-nav-home" >Trang chủ</a>
+                        <a href="./index.html" class="header-nav-home" >Trang chủ</a>
                     </li>
                     <li class="nav-item">
                         <a href="./introduction.html">Giới thiệu</a>
@@ -56,29 +56,35 @@
                     <input type="text" placeholder="Bạn cần tìm gì?">
                     <a href="#" class="ti-search"></a>
                 </div>
-                <div class="nav-right-icon">
-                    <a href="#" class="navright-item ti-heart">
-                        <span class="notification">0</span>
-                    </a>
-                    <a href="#" class="navright-item ti-bag">
-                        <span class="notification">0</span>
-                    </a>
-                    <div class="user">
+                <ul class="nav-right-list">
+                    <li class="list--item">
+                        <a href="./favorite.html" class="navright-item ti-heart">
+                            <span class="notification">0</span>
+                        </a>
+                    </li>
+                    <li class="list--item">
+                        <a href="#" class="navright-item ti-bag js-btn-cartshopping">
+                            <span class="notification">0</span>
+                        </a>
+                    </li>
+                    <li class="list--item user">
                         <a href="#" class="navright-item ti-user"></a>  
                         <div class="signupsignin">
                             <div class="signupsignin-item signin">
-                                <a href="">Đăng nhập</a>
+                                <button class="btn btn-login js-btn-login">Đăng nhập</button>
                             </div>
                             <div class="signupsignin-item signup">
-                                <a href="">Đăng ký</a>
+                                <button class="btn btn-register js-btn-register">Đăng ký</button>
                             </div>
                         </div>
-                    </div>
-                    <a href="#" class="navright-item ti-align-justify"></a>
-                </div>
+                    </li>
+                    <li class="list--item">
+                        <a href="#" class="navright-item ti-align-right js-btn-sidebar"></a>
+                    </li>
+                </ul>
             </div>
         </div>
-    </div>
+    </div> 
     <!-- SILDER -->
     <div id="slider">
         <div id="drop-of-water">

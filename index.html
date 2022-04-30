@@ -10,6 +10,7 @@
     <link rel="stylesheet" href="./assets/fontawesome-free-6.1.1/fontawesome-free-6.1.1-web/css/all.min.css">
     <link rel="stylesheet" href="./assets/css/style.css">
     <link rel="stylesheet" href="./assets/css/responsive.css">
+    <link rel="stylesheet" href="./assets/css/modal.css">
 </head>
 <body>
     <div id="main">
@@ -25,7 +26,7 @@
                         </li>
                         <li class="nav-item nav-product ">
                             <div class="nav-product">
-                                <a href="./products.html">Sản phẩm <i class="ti-arrow-circle-down nav-arrow-icon"></i></a>
+                                <a href="./products.html">Sản phẩm <i class="fa-solid fa-caret-down nav-arrow-icon"></i></a>
                             </div>
                             <ul class="subnav">
                                 <li class="subnav-item"><a href="./subnavfruits.html">Trái cây</a></li>
@@ -57,14 +58,18 @@
                         <input type="text" placeholder="Bạn cần tìm gì?">
                         <a href="#" class="ti-search"></a>
                     </div>
-                    <div class="nav-right-icon">
-                        <a href="#" class="navright-item ti-heart">
-                            <span class="notification">0</span>
-                        </a>
-                        <a href="#" class="navright-item ti-bag js-btn-cartshopping">
-                            <span class="notification">0</span>
-                        </a>
-                        <div class="user">
+                    <ul class="nav-right-list">
+                        <li class="list--item">
+                            <a href="./favorite.html" class="navright-item ti-heart">
+                                <span class="notification">0</span>
+                            </a>
+                        </li>
+                        <li class="list--item">
+                            <a href="#" class="navright-item ti-bag js-btn-cartshopping">
+                                <span class="notification">0</span>
+                            </a>
+                        </li>
+                        <li class="list--item user">
                             <a href="#" class="navright-item ti-user"></a>  
                             <div class="signupsignin">
                                 <div class="signupsignin-item signin">
@@ -74,9 +79,11 @@
                                     <button class="btn btn-register js-btn-register">Đăng ký</button>
                                 </div>
                             </div>
-                        </div>
-                        <a href="#" class="navright-item ti-align-justify"></a>
-                    </div>
+                        </li>
+                        <li class="list--item">
+                            <a href="#" class="navright-item ti-align-right js-btn-sidebar"></a>
+                        </li>
+                    </ul>
                 </div>
             </div>
         </div> 
@@ -143,6 +150,14 @@
                             <div class="item-rprice">
                                 <p>- 60%</p>
                             </div>
+                            <div class="item-loveandsetting">
+                                <a href="">
+                                    <button class="ti-heart"></button>
+                                </a>
+                                <a href="./guava.html">
+                                    <button class="ti-settings"></button>
+                                </a>
+                            </div>
                             <a href="./guava.html">
                                 <img src="./assets/images/sp1.webp" alt="Ổi lê ruột đỏ">
                             </a>
@@ -159,6 +174,14 @@
                     <div class="sectiontwo-item">
                         <div class="item-rprice">
                             <p>- 41%</p>
+                        </div>
+                        <div class="item-loveandsetting">
+                            <a href="">
+                                <button class="ti-heart"></button>
+                            </a>
+                            <a href="./redpeachUSA.html">
+                                <button class="ti-settings"></button>
+                            </a>
                         </div>
                         <div class="item-sp">
                             <a href="./redpeachUSA.html">
@@ -178,6 +201,14 @@
                         <div class="item-rprice">
                             <p>- 42%</p>
                         </div>
+                        <div class="item-loveandsetting">
+                            <a href="">
+                                <button class="ti-heart"></button>
+                            </a>
+                            <a href="./strawberry.html">
+                                <button class="ti-settings"></button>
+                            </a>
+                        </div>
                         <div class="item-sp">
                             <a href="./strawberry.html">
                                 <img src="./assets/images/sp3.webp" alt="Dâu tây">
@@ -196,6 +227,14 @@
                         <div class="item-rprice">
                             <p>- 21%</p>
                         </div>
+                        <div class="item-loveandsetting">
+                            <a href="">
+                                <button class="ti-heart"></button>
+                            </a>
+                            <a href="./lemon.html">
+                                <button class="ti-settings"></button>
+                            </a>
+                        </div>
                         <div class="item-sp">
                             <a href="./lemon.html">
                                 <img src="./assets/images/sp4.webp" alt="Chanh tươi vỏ xanh">
@@ -213,6 +252,14 @@
                     <div class="sectiontwo-item">
                         <div class="item-rprice">
                             <p>- 41%</p>
+                        </div>
+                        <div class="item-loveandsetting">
+                            <a href="">
+                                <button class="ti-heart"></button>
+                            </a>
+                            <a href="./orange.html">
+                                <button class="ti-settings"></button>
+                            </a>
                         </div>
                         <div class="item-sp">
                             <a href="./orange.html">
@@ -658,7 +705,7 @@
                             <input type="text" placeholder="Nhập email của bạn">
                         </div>
                        <div class="signup-btn">
-                            <input type="submit" value="Đăng ký" >
+                            <button class="js-btn-register">Đăng ký</button>
                        </div>
                     </div>
                 </div>
@@ -795,6 +842,40 @@
                     <div class="modal__cartshopping--content">
                         <img src="./assets/images/mobile-shopping.svg" alt="">
                         <button class="btn--continueshopping">Tiếp tục mua hàng</button>
+                    </div>
+                </div>
+            </div>
+            <div class="modal__sidebar js-modal__sidebar">
+                <div class="modal__sidebar--inner">
+                    <div class="modal__sidebar--nav">
+                        <ul class="sidebar__login">
+                            <li class="sidebar__login-inner">
+                                <i class="fa-solid fa-right-to-bracket"></i>
+                                <span class="sidebar--btn-login js-btn-login">Đăng nhập</span>
+                            </li>
+                        </ul>
+                        <ul class="modal__sidebar--list">
+                            <li class="modal__sidebar--item">
+                                <i class="fa-solid fa-house"></i>
+                                <a href="./index.html">Trang chủ</a>
+                            </li>
+                            <li class="modal__sidebar--item">
+                                <i class="fa-solid fa-clipboard-list"></i>
+                                <a href="./products.html">Sản phẩm</a>
+                            </li>
+                            <li class="modal__sidebar--item">
+                                <i class="fa-solid fa-newspaper"></i>
+                                <a href="./news.html">Tin tức</a>
+                            </li>
+                            <li class="modal__sidebar--item">
+                                <i class="fa-solid fa-square-phone"></i>
+                                <a href="./contact.html">Liên hệ</a>
+                            </li>
+                            <li class="modal__sidebar--item">
+                                <i class="fa-solid fa-circle-info"></i>
+                                <a href="./introduction.html">Giới thiệu</a>
+                            </li>
+                        </ul>
                     </div>
                 </div>
             </div>
