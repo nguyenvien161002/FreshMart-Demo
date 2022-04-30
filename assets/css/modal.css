@@ -296,8 +296,6 @@
 }
 
 .sidebar__login-inner {
-    padding: 20px 0 20px 20px;
-    color: #757575;
     margin-bottom: 12px;
     list-style: none;
     border-radius: 10px 0 0 10px;
@@ -305,10 +303,13 @@
 
 .sidebar__login-inner i {
     margin-right: 16px;
+    color: #757575;
 }
 
 .sidebar--btn-login {
     color: #333;
+    display: block;
+    padding: 20px 0 20px 20px; 
 }
 
 .modal__sidebar--list {
@@ -316,20 +317,22 @@
 }
 
 .modal__sidebar--item {
-    padding: 20px 0 20px 20px;
-    color: #757575;
     list-style: none;
     border-radius: 10px 0 0 10px;
 }
 
-.modal__sidebar--item i {
+.modal__sidebar--item a i {
     width: 18px;
     margin-right: 16px;
+    color: #757575;
 }
 
 .modal__sidebar--item a {
     text-decoration: none;
     color: #333;
+    display: block;
+    width: 100%;
+    padding: 20px 0 20px 20px;
 }
 
 .sidebar__login-inner:hover,
