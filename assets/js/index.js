@@ -7,6 +7,7 @@ const btnsCancel = document.querySelectorAll('.js-btn-cancel');
 const btnCart = document.querySelector('.js-btn-cartshopping');
 const btnSiderBar = document.querySelector('.js-btn-sidebar');
 const btnClose = document.querySelector('.js-btn-close');
+const btnLoginRps = document.querySelector('.js-btn-loginRps');
 // variable div
 const modal = document.querySelector('.js-modal');
 const modalRegister = document.querySelector('.js-modal__register');
@@ -55,6 +56,10 @@ function showModalCart() {
 
 btnLogin.addEventListener('click', showModalLogin);
 btnRegister.addEventListener('click', showModalRegister);
+btnLoginRps.addEventListener('click', function(){
+    modalRegisterLogin.classList.remove('hidden');
+    showModalLogin();
+});
 
 for (const btnCancel of btnsCancel) {
     btnCancel.addEventListener('click', hiddenModal);

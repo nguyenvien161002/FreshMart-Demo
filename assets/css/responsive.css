@@ -153,6 +153,10 @@
     .footer-copyright-iconcontact {
         display: block;
     }
+    /* MODAL */
+    .modal__registerlogin {
+        margin-top: 55px ;
+    }
 
 }
 /* MOBILE */
@@ -388,6 +392,43 @@
     .iconcontact .iconcontact-item {
         padding: 13px;
         margin: 0;
+    }
+
+    /* MODAL */
+    .modal__registerlogin {
+        width: 80%;
+    }
+
+    .inner__authform--header {
+        justify-content: center;
+        
+    }
+
+    .inner__authform--header > img {
+        width: 150px;
+    }
+
+    .inner__authform--header > p {
+        display: none;
+    }
+
+    .inner__authform--controls {
+        justify-content: space-evenly;
+    }
+
+    .inner__authform--controls > button {
+        width: 45%;
+        padding: 15px 0;
+        margin: 0;
+    }
+
+    .authform__help {
+        margin-bottom: 25px;
+        font-size: 15px;
+    }
+
+    .authform--socials-item {
+        width: 41%;
     }
 
 }

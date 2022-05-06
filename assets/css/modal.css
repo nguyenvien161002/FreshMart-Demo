@@ -146,7 +146,7 @@
 .inner__authform--socials {
     background-color: rgb(231, 231, 231);
     display: flex;
-    justify-content: space-around;
+    justify-content: space-between;
 }
 
 .inner__authform--socials a {
@@ -157,7 +157,7 @@
 .authform--socials-item {
     padding: 10px;
     margin: 10px 0px;
-    width: 220px;
+    width: 44%;
     border-radius: 3px;
     font-size: 15px;
 }

@@ -821,6 +821,7 @@ html {
 
 .footer-item .signup-text-btn {
     display: flex;
+    position: relative;
     margin: 0px;
     width: 100%;
     font-size: 16px;
@@ -844,8 +845,9 @@ html {
     padding: 12px 20px;
     background-color: #ffb416;
     border-radius: 0px 50px 50px 0px;
-    margin-left: -89px;
     color: #f3f2fb;
+    position: absolute;
+    right: 0;
 }
 
 .footer-introduction .introduction {
