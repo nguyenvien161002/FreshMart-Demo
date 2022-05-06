@@ -81,4 +81,3 @@ modalSiderBar.addEventListener('click', function(event){
 btnCart.addEventListener('click', showModalCart);
 btnClose.addEventListener('click', hiddenModal);
 btnSiderBar.addEventListener('click', showSidebar);
-

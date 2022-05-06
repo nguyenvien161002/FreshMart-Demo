@@ -104,6 +104,8 @@ html {
     display: block;
     padding: 7px 10px;
     border-bottom: solid 1px #e5e6ec;
+    color: #666;
+    font-size: 14px;
 }
 
 #nav .nav-item .nav-product {
@@ -307,7 +309,7 @@ html {
 }
 
 .sectionone-item img:hover {
-    box-shadow: 0px 5px 7px 5px rgb(0 0 0 / 5%);
+    box-shadow: 0px 9px 15px 0px rgb(0 0 0 / 5%);
     transform: translateY(4px);
     transition: all 0.5s ease;
     transform-origin: top; 
@@ -316,6 +318,7 @@ html {
 .sectionone-item p {
     padding: 15px 0px 25px;
     font-weight: 300;
+    font-size: 15px;
 }
 
 /* CONTENT.SECTION--TWO */
@@ -426,7 +429,7 @@ html {
 .item-sp .item-sp--name {
     text-decoration: none;
     color: #000;
-    font-size: 16px;
+    font-size: 15px;
     letter-spacing: 1px;
 }
 
@@ -697,7 +700,8 @@ html {
     font-size: 34px;
     text-decoration: none;
     color: #000;
-    margin-bottom: 10px;font-weight: bold;
+    margin-bottom: 10px;
+    font-weight: bold;
 }
 
 .sectioneight-title a:hover {
@@ -766,9 +770,10 @@ html {
     color: #fff;
 }
 
-.sectioneight-item  .item-author {
+.sectioneight-item .item-author {
     padding: 5px 10px;
     color: white;
+    font-size: 15px;
 }
 
 /* FOOTER */
