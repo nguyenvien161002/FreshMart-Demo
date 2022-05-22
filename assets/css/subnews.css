@@ -4,10 +4,14 @@
     box-sizing: border-box;
 }
 
-html {
-    font-family: Arial, Helvetica, sans-serif;
+@font-face {
+    font-family: 'Roboto';
+    src: url(../roboto/Roboto-Regular.ttf);
 }
 
+html {
+    font-family: 'Roboto', -apple-system, Arial, Helvetica, sans-serif;
+}
 
 .width_86 {
     width: 1280px;
@@ -104,6 +108,8 @@ html {
     display: block;
     padding: 7px 10px;
     border-bottom: solid 1px #e5e6ec;
+    color: #666;
+    font-size: 14px;
 }
 
 #nav .nav-item .nav-product {
@@ -115,8 +121,15 @@ html {
 }
 
 #nav .nav-arrow-icon {
-    padding-left: 5px;
+    margin-left: 5px;
+    font-size: 18px;
+    transition: all ease 0.4s;
 }
+
+#nav .nav-product:hover .nav-arrow-icon{
+    transform: rotate(180deg);
+}
+
 
 #nav .nav-item a:hover {
     color: #ffb416;

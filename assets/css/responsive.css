@@ -155,7 +155,15 @@
     }
     /* MODAL */
     .modal__registerlogin {
-        margin-top: 55px ;
+        margin: 55px auto;
+    }
+
+    .inner__authform--headercp {
+        display: none;
+    }
+
+    .inner__authform--socials {
+        margin-bottom: 20px;
     }
 
 }
@@ -401,7 +409,6 @@
 
     .inner__authform--header {
         justify-content: center;
-        
     }
 
     .inner__authform--header > img {
@@ -412,23 +419,43 @@
         display: none;
     }
 
+    .inner__authform--headercp {
+        padding: 10px ;
+    }
+
     .inner__authform--controls {
         justify-content: space-evenly;
     }
 
     .inner__authform--controls > button {
-        width: 45%;
-        padding: 15px 0;
         margin: 0;
     }
 
     .authform__help {
-        margin-bottom: 25px;
+        margin-bottom: 20px;
         font-size: 15px;
     }
 
+    .inner__authform--socials {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .authform--socialsFb {
+        margin-right: 0;
+        margin-bottom: 10px;
+    }
+
+    .authform--socialsFb a {
+        width: 100%;
+    }
+
+    .authform--socialsFb i {
+        width: 33%;
+    }
+
     .authform--socials-item {
-        width: 41%;
+        width: 80%;
     }
 
 }

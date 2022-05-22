@@ -22,18 +22,21 @@
     position: absolute;
     width: 100%;
     height: 100%;
-    background-color: rgba(0, 0, 0, 0.4);
+    background: rgba(0, 0, 0, 0.4);
     z-index: 1;
 }
 
 .modal__registerlogin {
     z-index: 2;
-    background-color: white;
+    background: linear-gradient(to bottom, #2dca41, #75cf01);
     margin: auto;
     width: 500px;
-    border-radius: 5px;
+    height: max-content;
+    border-radius: 10px;
     overflow: hidden;
     animation: modalAnimations ease 0.5s;
+    box-shadow: 0px 25px 45px rgb(0 0 0 / 0.1);
+    border: 1px solid rgba(255, 255, 255, 0.4);
 }
 
 @keyframes modalAnimations {
@@ -47,47 +50,63 @@
 
 .inner__authform--header {
     display: flex;
+    flex-direction: column;
     align-items: center;
     justify-content: space-between;
-    padding: 20px 30px;
-    background-color: #3ba66b;
+    padding: 15px 30px ;
     color: white;
 }
 
+.inner__authform--header img {
+    margin-bottom: 10px;
+}
+
 .inner__authform--body {
-    padding: 30px;
+    padding: 0 30px;
 }
 
-.inner__authform--header > p {
-    font-size: 30px;
+.inner__authform--title {
+    font-size: 24px;
     font-weight: 600;
+    margin-bottom: 10px;
 }
 
-.inner__authform--header > span {
-    font: 18px;
-    font-weight: 500;
+.authform__fromhome {
+    display: flex;
+    font-size: 15px;
 }
 
-.inner__authform--form .authform__item {
+.authform__fromhome span {
+    margin: 0 10px;
+}
+
+.authform__fromhome a {
+    text-decoration: none;
+    color: #fff;
+}
+
+.authform__item {
     display: flex;
     flex-direction: column;
     padding: 8px 0;
 }
 
-.authform__item label {
-    padding-bottom: 5px;
-}
-
 .authform__item input {
-    padding: 12px;
-    border-radius: 3px;
-    border: 1px solid #ccc;
+    padding: 12px 20px;
+    border-radius: 25px;
     outline: none;
-    background-color: rgb(243, 240, 240);
+    background-color: rgba(255, 255, 255, 0.2);
+    color: #fff;
+    border: none;
+    box-shadow: 0px 5px 15px rgb(0 0 0 / 5%);
+    letter-spacing: 1px;
+    font-size: 16px;
+    margin-bottom: 10px;
 }
 
-.authform__item input:focus {
-    border-color: #888;
+.authform__item input::placeholder {
+    font-size: 16px;
+    color: #fff;
 }
 
 .termsandpolicy {
@@ -103,50 +122,91 @@
 .authform__help {
     display: flex;
     align-items: center;
-    justify-content: flex-end;
-    margin: 10px 0 60px;
+    justify-content: space-between;
+    margin: 0 0 20px;
 }
 
-.authform__help a {
-    text-decoration: none;
-    font-weight: 500;
+.authform__help > button {
+    padding: 12px 20px;
+    border-radius: 25px;
+    border: none;
+    font-size: 16px;
+    color: #fff;
+    background-color: #FFC107;
+    font-weight: bold;
+    cursor: pointer;
 }
 
-.authform__help--forgot {
+.authform__help--register {
+    width: 100%;
+}
+
+.authform__separate {
+    position: relative;
+    display: flex;
+    justify-content: center;
+    margin-bottom: 20px;
+}
+
+.authform__separate span {
+    padding: 5px 10px;
+    background-color: #fff;
+    z-index: 2;
+    border-radius: 20px;
     color: #3ba66b;
 }
 
-.authform__help--help {
-    color: #888;
+.authform__separate::before {
+    content: "";
+    width: 100%;
+    height: 1px;
+    background: #fff;
+    position: absolute;
+    top: 50%;
+    z-index: 1;
 }
 
-.authform__help--separate {
-    display: block;
-    border-left: 1px solid #ccc;
-    margin: 0 10px;
-    height: 22px;
+.inner__authform--des {
+    padding: 10px;
+    border-radius: 5px;
+    border: 0.5px #fff solid;
+    text-align: center;
+}
+
+.authform__help--forgot {
+    color: #fff;
+    text-decoration: none;
 }
 
 .inner__authform--controls {
     display: flex;
-    justify-content: right;
+    flex-direction: column;
+    padding: 0 30px 20px 30px;
 }
 
 .inner__authform--controls > button {
-    padding: 15px 28px;
-    margin-left: 10px;
-    border: 1px solid #ccc;
-    background-color: #3ba66b;
+    padding: 12px 20px;
+    background-color: rgb(230, 230, 230, 0.5);
     border-radius: 5px;
     color: white;
-    font-weight: 500;
+    font-weight: 600;
     cursor: pointer;
+    border-radius: 25px;
+    font-size: 16px;
+    border: none;
+}
+
+.inner__authform--controls > button:first-child {
+    margin-bottom: 10px;
 }
 
 .inner__authform--socials {
-    background-color: rgb(231, 231, 231);
     display: flex;
-    justify-content: space-between;
+    justify-content: center;
+}
+
+.modal__register .inner__authform--socials {
+    margin-bottom: 20px;
 }
 
 .inner__authform--socials a {
@@ -155,16 +215,14 @@
 }
 
 .authform--socials-item {
-    padding: 10px;
-    margin: 10px 0px;
-    width: 44%;
-    border-radius: 3px;
-    font-size: 15px;
+    border-radius: 5px;
 }
 
 .authform--socialsFb {
     background-color: #217efc;
-    margin-left: 23px;
+    margin-right: 100px;
+    display: flex;
+    padding: 10px;
 }
 
 .authform--socialsFb i {
@@ -174,16 +232,11 @@
 
 .authform--socialsGg {
     background-color: white;
-    margin-right: 23px;
+    border-radius: 5px;
+    overflow: hidden;
 }
 
-.authform--socialsGg img {
-    width: 22px;
-    margin-right: 10px;
-}
-
-.authform--socialsFb a,
-.authform--socialsGg a {
+.authform--socialsFb a {
     display: flex;
     align-items: center;
     color: white;
@@ -339,5 +392,35 @@
 .modal__sidebar--item:hover {
     background: #f0f0f0;
 }
+/* LOGIN WITH GG-CSS */
+.abcRioButtonLightBlue {
+    height: 44px !important;
+    width: 100% !important;   
+}
 
+.abcRioButtonContentWrapper {
+    display: flex;
+    align-items: center;
+}
+
+.abcRioButton:hover {
+    background-color: rgba(0, 0, 0, 0.2);
+    color: #fff;
+}
+
+.abcRioButtonContents {
+    font-size: 16px !important;
+    width: 67%;
+    padding-right: 4px;
+}
+
+.abcRioButtonSvgImageWithFallback.abcRioButtonIconImage {
+    height: 24px !important;
+    width: 24px !important;
+}
+
+.abcRioButtonSvg {
+    height: 24px;
+    width: 24px;
+}
 /* THE END CSS MODAL */

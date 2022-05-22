@@ -4,13 +4,14 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="google-signin-client_id" content="763173387217-lv83ao8bnjcorooamgv3enh452o3tab9.apps.googleusercontent.com">
     <title>Trái cam mật | Fresh Mart</title>
     <link rel="icon" type="image/x-icon" href="./assets/images/logo2.webp">
     <link rel="stylesheet" href="./assets/themify-icons-font/themify-icons/themify-icons.css">
     <link rel="stylesheet" href="./assets/fontawesome-free-6.1.1/fontawesome-free-6.1.1-web/css/all.min.css">
+    <link rel="stylesheet" href="./assets/css/modal.css">
     <link rel="stylesheet" href="./assets/css/product.css">
     <link rel="stylesheet" href="./assets/css/rpsproduct.css">
-    <link rel="stylesheet" href="./assets/css/modal.css">
 </head>
 <body>
     <div id="header">
@@ -25,7 +26,7 @@
                     </li>
                     <li class="nav-item nav-product ">
                         <div class="nav-product">
-                            <a href="./products.html">Sản phẩm <i class="ti-arrow-circle-down nav-arrow-icon"></i></a>
+                            <a href="./products.html">Sản phẩm <i class="fa-solid fa-caret-down nav-arrow-icon"></i></a>
                         </div>
                         <ul class="subnav">
                             <li class="subnav-item"><a href="./subnavfruits.html">Trái cây</a></li>
@@ -338,77 +339,79 @@
             <div class="modal__inner modal__register js-modal__register">
                 <div class="inner__authform--header">
                     <img src="./assets/images/logo.webp" alt="">
-                    <p>Đăng ký</p>
+                    <div class="authform__fromhome">
+                        <a href="./index.html">Trang chủ</a>
+                        <span>/</span>
+                        <p>Đăng nhập tài khoản</p>
+                    </div>
                 </div>
                 <div class="inner__authform--body">
                     <div class="inner__authform--form">
                         <div class="authform__item">
-                            <label for="text">Tài khoản</label>
-                            <input type="text" name="" placeholder="Email hoặc số điện thoại">
+                            <input type="text" name="" placeholder="Họ tên">
+                            <input type="text" name="" placeholder="Số điện thoại">
+                            <input type="text" name="" placeholder="E-mail">
+                            <input type="password" name="" placeholder="Mật khẩu">
                         </div>
-                        <div class="authform__item">
-                            <label for="password">Mật khẩu</label>
-                            <input type="password" name="" placeholder="Mật khẩu của bạn">
+                        <div class="authform__help">
+                            <button class="authform__help--register">Đăng nhập</button>
                         </div>
-                        <div class="authform__item">
-                            <label for="password">Nhập lại mật khẩu</label>
-                            <input type="password" name="" placeholder="Nhập lại mật khẩu">
+                        <div class="authform__separate">
+                            <span>Hoặc đăng nhập qua</span>
                         </div>
-                        <div class="termsandpolicy">
-                            <p>Bằng việc đăng kí, bạn đã đồng ý với Fresh Mart về 
-                                <a href="">Điều khoản dịch vụ</a>
-                                & <a href="">Chính sách bảo mật</a>
-                            </p>
-                        </div>
-                    </div>
-                    <div class="inner__authform--controls">
-                        <button class="btn-cancel js-btn-cancel">HỦY</button>
-                        <button class="btn-registerModal js-btnregisterModal">ĐĂNG KÝ</button>
                     </div>
                 </div>
                 <div class="inner__authform--socials">
                     <div class="authform--socials-item authform--socialsFb">
-                        <a href="" class=""><i class="fa-brands fa-facebook-square"></i>Kết nối với Facebook</a>
+                        <a href="" class=""><i class="fa-brands fa-facebook-square"></i>Facebook</a>
                     </div>
-                    <div class="authform--socials-item authform--socialsGg">
-                        <a href="" class=""><img src="./assets/images/icon-ggofcolor.png" alt="">Kết nối với Google</a>
+                    <div class="authform--socials-item authform--socialsGg g-signin2" data-onsuccess="onSignIn">
                     </div>
+                </div>
+                <div class="inner__authform--controls">
+                    <button class="btn-registerModal js-btnregisterModal">Tạo tài khoản</button>
+                    <button class="btn-cancel js-btn-cancel">Quay về trang chủ</button>
                 </div>
             </div> 
             <!-- LogIn -->
             <div class="modal__inner modal__login js-modal__login"> 
                 <div class="inner__authform--header">
                     <img src="./assets/images/logo.webp" alt="">
-                    <p>Đăng nhập</p>
+                    <div class="authform__fromhome">
+                        <a href="./index.html">Trang chủ</a>
+                        <span>/</span>
+                        <p>Đăng nhập tài khoản</p>
+                    </div>
                 </div>
                 <div class="inner__authform--body">
                     <div class="inner__authform--form">
                         <div class="authform__item">
-                            <label for="text">Tài khoản</label>
-                            <input type="text" name="" placeholder="Email hoặc số điện thoại">
-                        </div>
-                        <div class="authform__item">
-                            <label for="password">Mật khẩu</label>
-                            <input type="password" name="" placeholder="Mật khẩu của bạn">
+                            <input type="text" name="" placeholder="E-mail">
+                            <input type="password" name="" placeholder="Mật khẩu">
                         </div>
                         <div class="authform__help">
-                            <a href="#" class="authform__help--forgot">Quên mật khẩu</a>
-                            <span class="authform__help--separate"></span>
-                            <a href="#" class="authform__help--help">Cần trợ giúp?</a>
+                            <button>Đăng nhập</button>
+                            <a href="#" class="authform__help--forgot">Quên mật khẩu?</a>
                         </div>
-                    </div>
-                    <div class="inner__authform--controls">
-                        <button class="btn-cancel js-btn-cancel">HỦY</button>
-                        <button class="btn-registerModal js-btnregisterModal">ĐĂNG KÝ</button>
+                        <div class="authform__separate">
+                            <span>Hoặc đăng nhập qua</span>
+                        </div>
                     </div>
                 </div>
                 <div class="inner__authform--socials">
                     <div class="authform--socials-item authform--socialsFb">
-                        <a href="" class=""><i class="fa-brands fa-facebook-square"></i>Kết nối với Facebook</a>
+                        <a href="" class=""><i class="fa-brands fa-facebook-square"></i>Facebook</a>
                     </div>
-                    <div class="authform--socials-item authform--socialsGg">
-                        <a href="" class=""><img src="./assets/images/icon-ggofcolor.png" alt="">Kết nối với Google</a>
+                    <div class="authform--socials-item authform--socialsGg g-signin2" data-onsuccess="onSignIn">
                     </div>
+                </div>
+                <div class="inner__authform--header inner__authform--headercp">
+                    <p class="inner__authform--title">Đăng ký</p>
+                    <p class="inner__authform--des">Tạo tài khoản để quản lý đơn hàng, và các thông tin thanh toán, gửi hàng một cách đơn giản hơn.</p>
+                </div>
+                <div class="inner__authform--controls">
+                    <button class="btn-registerModal js-btnregisterModal">Tạo tài khoản</button>
+                    <button class="btn-cancel js-btn-cancel">Quay về trang chủ</button>
                 </div>
             </div>  
         </div>
@@ -424,7 +427,36 @@
                 </div>
             </div>
         </div>
+        <div class="modal__sidebar js-modal__sidebar">
+            <div class="modal__sidebar--inner">
+                <div class="modal__sidebar--nav">
+                    <ul class="sidebar__login">
+                        <li class="sidebar__login-inner">
+                            <span class="sidebar--btn-login js-btn-loginRps"><i class="fa-solid fa-right-to-bracket"></i>Đăng nhập</span>
+                        </li>
+                    </ul>
+                    <ul class="modal__sidebar--list">
+                        <li class="modal__sidebar--item">
+                            <a href="./index.html"><i class="fa-solid fa-house"></i>Trang chủ </a>
+                        </li>
+                        <li class="modal__sidebar--item">
+                            <a href="./products.html"><i class="fa-solid fa-clipboard-list"></i>Sản phẩm</a>
+                        </li>
+                        <li class="modal__sidebar--item">
+                            <a href="./news.html"><i class="fa-solid fa-newspaper"></i>Tin tức</a>
+                        </li>
+                        <li class="modal__sidebar--item">
+                            <a href="./contact.html"><i class="fa-solid fa-square-phone"></i>Liên hệ</a>
+                        </li>
+                        <li class="modal__sidebar--item">
+                            <a href="./introduction.html"><i class="fa-solid fa-circle-info"></i>Giới thiệu</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
     </div>
     <script src="./assets/js/index.js"></script>
+    <script src="https://apis.google.com/js/platform.js" async defer></script>
 </body>
 </html>
