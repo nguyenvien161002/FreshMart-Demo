@@ -75,7 +75,7 @@ function addProduct(){
     })
 }
 
-// Tăng giảm số lượng
+// Increase or decrease the amount
 var btnMinus = document.querySelector('.js--minus');
 var btnPlus = document.querySelector('.js--plus');
 var valueQuantity = document.querySelector('.js--enterquantity');
