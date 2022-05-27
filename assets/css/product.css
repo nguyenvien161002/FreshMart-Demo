@@ -193,15 +193,20 @@ html {
 
 .notification {
     position: absolute;
-    width: 17px;
-    height: 17px;
     background: #ffb416;
     color: #fff;
+    opacity: 0;
+    height: 20px;
+    width: 20px;
     text-align: center;
-    line-height: 17px;
-    border-radius: 17px;
-    top: 0px;
-    font-size: 12px;
+    font-size: 16px;
+    border-radius: 50%;
+    top: 0;
+    right: -7px;
+}
+
+.notification.opacity {
+    opacity: 1;
 }
 
 .signupsignin {
@@ -333,9 +338,7 @@ html {
     border-radius: 5px;
 }
 
-.content-slide--item:nth-child(2),
-.content-slide--item:nth-child(3),
-.content-slide--item:nth-child(4) {
+.content-slide--item {
     border: 1px solid #ccc;
     opacity: 0.5;
 }
@@ -347,131 +350,46 @@ html {
     opacity: 1;
 }
 
-.content-details .content-details--imgguava {
-    background-image: url(../images/sp1.webp);
-    background-repeat: no-repeat;
-    background-size: contain;
-    position: relative;
+.content-slide--item.opacity {
+    border: 1px solid #3ba66b;
+    opacity: 1;
 }
 
-.content-details .content-details--imgredpeachUSA {
-    background-image: url(../images/sp2.webp);
-    background-repeat: no-repeat;
-    background-size: contain;
-    position: relative;
+.content-details--item {
+    position: relative; 
 }
 
-.content-details .content-details--imgstrawberry {
-    background-image: url(../images/sp3.webp);
-    background-repeat: no-repeat;
-    background-size: contain;
-    position: relative;
+.content-details .imgproduct {
+    width: 100%;
+    border-radius: 10px;
+    border: 1px solid #ccc;
+    margin-right: -20px;
 }
-
-.content-details .content-details--imglemon {
-    background-image: url(../images/sp4.webp);
-    background-repeat: no-repeat;
-    background-size: contain;
-    position: relative;
-}
-
-.content-details .content-details--imgorange {
-    background-image: url(../images/sp5.webp);
-    background-repeat: no-repeat;
-    background-size: contain;
-    position: relative;
-}
-
-.content-details .content-details--imgonion {
-    background-image: url(../images/sp7.webp);
-    background-repeat: no-repeat;
-    background-size: contain;
-    position: relative;
-}
-
-.content-details .content-details--imgtomato {
-    background-image: url(../images/sp8.webp);
-    background-repeat: no-repeat;
-    background-size: contain;
-    position: relative;
-}
-
-.content-details .content-details--imgyellowbellpepper {
-    background-image: url(../images/sp9.webp);
-    background-repeat: no-repeat;
-    background-size: contain;
-    position: relative;
-}
-
-.content-details .content-details--imggreenbellpepper {
-    background-image: url(../images/sp10.webp);
-    background-repeat: no-repeat;
-    background-size: contain;
-    position: relative;
-}
-
-.content-details .content-details--imggrape {
-    background-image: url(../images/sp15.webp);
-    background-repeat: no-repeat;
-    background-size: contain;
-    position: relative;
-}
-
-.content-details .content-details--imggreenapple {
-    background-image: url(../images/sp22.webp);
-    background-repeat: no-repeat;
-    background-size: contain;
-    position: relative;
-}
-
-.content-details .content-details--imgbeef {
-    background-image: url(../images/sp11.webp);
-    background-repeat: no-repeat;
-    background-size: contain;
-    position: relative;
-}
-
-.content-details .content-details--imgsalmon {
-    background-image: url(../images/sp12.webp);
-    background-repeat: no-repeat;
-    background-size: contain;
-    position: relative;
-}
-
-.content-details .content-details--imgchicken {
-    background-image: url(../images/sp13.webp);
-    background-repeat: no-repeat;
-    background-size: contain;
-    position: relative;
-}
-
-.content-details .content-details--imgpork {
-    background-image: url(../images/sp14.webp);
-    background-repeat: no-repeat;
-    background-size: contain;
-    position: relative;
-}
-
 
 .content-details {
     display: flex;
+    justify-content: space-between;
     width: 820px;
 }
 
 .content-details--item {
     line-height: 28px;
-    width: 50%;
+    width: 48%;
 }
 
 .content-details--item > i {
     position: absolute;
-    top: 0px;
-    right: 20px;
+    top: 10px;
+    right: 10px;
     background-color: #eb3e32;
     color: white;
     font-size: x-large;
     padding: 10px;
     border-radius: 50%;
+}
+
+.content-details--item > i:hover {
+    background-color: #ffb416;
 }
 
 .content-details--info {
@@ -495,6 +413,11 @@ html {
     font-weight: bold;
 }
 
+.info-priceandrprice {
+    display: flex;
+    align-items: flex-end;
+}
+
 .content-details--info .info-price {
     font-size: 24px;
     color: red;
@@ -506,11 +429,10 @@ html {
     text-decoration: underline;
 }
 
-.content-details--info .info-price a {
+.info-rprice {
     font-size: 16px;
     text-decoration: line-through;
     color: rgb(165, 162, 162);
-    font-weight: 100;
     margin-left: 5px;
 }
 
@@ -570,20 +492,41 @@ html {
     display: flex;
 }
 
-.content-details--amount .incr-and-decr a {
+.incr-and-decr .quantityadapter {
+    margin-right: 6px;
+    position: relative;
+}
+
+.quantityadapter-item {
+    padding: 7px  15px 5px 15px;
+    background-color: transparent;
+    position: absolute;
+    border: none;
+    border-radius: 50%;
+    height: 100%;
+    cursor: pointer;
+    font-size: small;
+}
+
+.minus {
+    left: 0;
+}
+
+.plus {
+    right: 0;
+}
+
+.enterquantity {
+    padding: 10px 0 8px 0;
+    border-radius: 25px;
+    text-align: center;
     border: 1px solid #ccc;
-    padding: 5px 7px;
-    border-radius: 50px;
-    margin-right: 10px;
+    width: 120px;
+    font-size: 16px;
+    outline: none;
 }
 
-.content-details--amount .incr-and-decr i {
-    font-size: 15px;
-    font-weight: 600;
-    padding: 10px 15px;
-}
-
-.content-details--amount .incr-and-decr button {
+.incr-and-decr .buynow {
     width: 100px;
     border-radius: 50px;
     border: none;
@@ -593,20 +536,20 @@ html {
     width: 110px;
 }
 
-.content-details--add button {
-    padding: 10px;
-    font-weight: bolder;
+.content-details--add {
+    padding: 12px 0 9px 0 ;
+    font-weight: bold;
     color: #fff;
     border: none;
     background-color: #3ba66b;
     border-radius: 50px;
     font-size: 16px;
     margin-top: 15px;
-    width: 224px;
+    width: 235px;
 }
 
-.content-details--add button:hover, 
-.content-details--amount button:hover {
+.content-details--add:hover, 
+.content-details--amount .buynow:hover {
     background-color: #ffb416;
     cursor: pointer;
 }

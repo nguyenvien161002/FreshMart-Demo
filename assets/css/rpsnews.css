@@ -162,7 +162,7 @@
     }
 
     #content .content-about {
-        padding-bottom: 0;
+        padding: 8px 0 0 0;
     }
 
     #content .content-item {

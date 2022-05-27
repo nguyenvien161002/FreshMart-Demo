@@ -62,12 +62,12 @@
                     <ul class="nav-right-list">
                         <li class="list--item">
                             <a href="./favorite.html" class="navright-item ti-heart">
-                                <span class="notification">0</span>
+                                <p class="notification">0</p>
                             </a>
                         </li>
                         <li class="list--item">
                             <a href="#" class="navright-item ti-bag js-btn-cartshopping">
-                                <span class="notification">0</span>
+                                <p class="notification">0</p>
                             </a>
                         </li>
                         <li class="list--item user">
@@ -636,7 +636,7 @@
                                 <a href="./subnew1st.html" >Đi chợ online: Xu hướng lên ngôi mùa dịch Covid-19</a>
                             </div>
                             <div class="item-author">
-                                <p>Tác giả: Nguyễn Văn Viên | 23/03/2022</p>
+                                <p>Tác giả: Clover | 23/03/2022</p>
                             </div>
                         </div>
                     </div>
@@ -651,7 +651,7 @@
                                 <a href="./subnew2nd.html">Cách chọn rau củ quả sạch tươi ngon, không 'ngậm độc'</a>
                             </div>
                             <div class="item-author">
-                                <p>Tác giả: Nguyễn Văn Viên | 23/03/2022</p>
+                                <p>Tác giả: Clover | 23/03/2022</p>
                             </div>
                         </div>
                     </div>
@@ -666,7 +666,7 @@
                                 <a href="./subnew2nd.html">Các loại ngũ cốc tốt cho sức khỏe</a>
                             </div>
                             <div class="item-author">
-                                <p>Tác giả: Nguyễn Văn Viên | 23/03/2022</p>
+                                <p>Tác giả: Clover | 23/03/2022</p>
                             </div>
                         </div>
                     </div>
@@ -681,7 +681,7 @@
                                 <a href="./subnew4th.html">Các cách chế biến món ăn từ rau xanh</a>
                             </div>
                             <div class="item-author">
-                                <p>Tác giả: Nguyễn Văn Viên | 23/03/2022</p>
+                                <p>Tác giả: Clover | 23/03/2022</p>
                             </div>
                         </div>
                     </div>
@@ -750,8 +750,7 @@
                 </div>
             </div>
         </div>
-        <!-- Start learning the rules for naming classes BEM: bắt đầu
-        học đặt tên class BEM -->
+        <!-- MODAL -->
         <div class="modal js-modal">
             <div class="modal__overlay"></div>
             <div class="modal__registerlogin js-modal__registerlogin">
@@ -837,14 +836,28 @@
                 </div>  
             </div>
             <div class="modal__cartshopping js-modal__cartshopping">
-                <div class="modal__cartshpping--inner">
+                <div class="modal__cartshpping--inner js--modal__cartshpping">
                     <div class="modal__cartshopping--header">
-                        <h3>GIỎ HÀNG</h3>
+                        <h4>GIỎ HÀNG</h4>
                         <button class="ti-close cartshopping--icon js-btn-close"></button>
                     </div>
-                    <div class="modal__cartshopping--content">
+                    <div class="modal__cartshopping--noproduct js--noproduct">
                         <img src="./assets/images/mobile-shopping.svg" alt="">
                         <button class="btn--continueshopping">Tiếp tục mua hàng</button>
+                    </div>
+                    <div class="summoney js--summoney">
+                        <span class="summoney--separate summoney--item"></span>
+                        <div class="summoney-labelandsum summoney--item">
+                            <p class="summoney--labelsum">Tổng tiền:</p>
+                            <div class="summoney--intomoneyandunitprice">
+                                <div class="summoney__currency">
+                                    <p class="summoney--intomoney js--intomoney">500</p>
+                                    <p>.000</p>
+                                </div>
+                                <p class="summoney--unitprice">đ</p>
+                            </div>
+                        </div>
+                        <button class="summoney--payment summoney--item">Thanh toán</button>
                     </div>
                 </div>
             </div>

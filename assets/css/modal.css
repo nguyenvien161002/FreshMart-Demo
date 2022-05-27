@@ -28,7 +28,7 @@
 
 .modal__registerlogin {
     z-index: 2;
-    background: linear-gradient(to bottom, #2dca41, #75cf01);
+    background: #3ba66b;
     margin: auto;
     width: 500px;
     height: max-content;
@@ -53,7 +53,7 @@
     flex-direction: column;
     align-items: center;
     justify-content: space-between;
-    padding: 15px 30px ;
+    padding: 15px 30px;
     color: white;
 }
 
@@ -160,7 +160,7 @@
     content: "";
     width: 100%;
     height: 1px;
-    background: #fff;
+    background: #ccc;
     position: absolute;
     top: 50%;
     z-index: 1;
@@ -186,7 +186,7 @@
 
 .inner__authform--controls > button {
     padding: 12px 20px;
-    background-color: rgb(230, 230, 230, 0.5);
+    background-color: rgba(230, 230, 230, 0.5);
     border-radius: 5px;
     color: white;
     font-weight: 600;
@@ -250,7 +250,7 @@
 .modal__cartshopping {
     background-color: white;
     z-index: 2;
-    width: 340px;
+    width: 300px;
     height: 100%;
     position: fixed;
     right: 0;
@@ -269,8 +269,9 @@
 }
 
 .modal__cartshpping--inner {
-    padding: 10px;
+    padding: 10px 15px;
     width: 100%;
+    position: relative;
 }
 
 .modal__cartshopping--header {
@@ -278,6 +279,7 @@
     justify-content: space-between;
     align-items: center;
     padding: 5px;
+    margin-bottom: 20px;
 }
 
 .cartshopping--icon {
@@ -292,17 +294,163 @@
     transform: rotate(360deg);
 }
 
-.modal__cartshopping--content {
+.modal__cartshopping--noproduct {
     display: flex;
     flex-direction: column;
     align-items: center;
     padding: 25px 0 0 ;
 }
 
-.modal__cartshopping--content img{
+.modal__cartshopping--noproduct.hidden{
+    display: none;
+}
+
+.modal__cartshopping--noproduct img{
     height: 200px;
     width: 200px;
 }
+/* There are products in the cart */
+.modal__cartshopping--content {
+    display: flex;
+    margin-top: 10px;
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    font-size: 15px;
+}
+
+.imgproduct--img {
+    width: 113px;
+    height: 113px;
+    border: 1px solid #ccc;
+    border-radius: 10px;
+    margin-right: 10px;
+}
+
+.infoproduct div {
+    margin-bottom: 6px;
+}
+
+.infoproduct--name {
+    display: block;
+}
+
+.infoproduct--separate {
+    margin: 0 5px;
+}
+
+.infoproduct_boxweight {
+    display: flex;
+}
+
+.infoproduct__button {
+    display: flex;
+    align-items: center;
+}
+
+.infoproduct__button label {
+    margin-right: 7px;
+}
+
+.infoproduct__button button {
+    width: 25px;
+    height: 26px;
+    background-color: #fff;
+    border: 1px solid #ccc;
+    cursor: pointer;
+}
+
+.infoproduct__button .quantity {
+    border: 1px solid #ccc;
+    padding: 6px 0 3px 0;
+    width: 25px;
+    text-align: center;
+    outline: none;
+}
+
+.infoproduct__priceproduct {
+    display: flex;
+}
+
+.priceproduct--labelprice {
+    margin-right: 5px;
+}
+
+.infoproduct__btnromove {
+    width: 100%;
+    border: none;
+    padding: 5px 0 4px 0;
+    border-radius: 5px;
+    cursor: pointer;
+    background: #3ba66b;
+    color: #fff;
+}
+
+.infoproduct__btnromove:hover {
+    background-color: #FFC107;
+}
+
+.summoney {
+    position: absolute;
+    width: 100%;
+    bottom: 0;
+    right: 0;
+    padding: 0 20px;
+    opacity: 0;
+}
+
+.show {
+    opacity: 1;
+}
+
+.summoney--separate {
+    display: block;
+    width: 100%;
+    height: 2px;
+    background-color: #ccc;
+}
+
+.summoney-labelandsum {
+    display: flex;
+}
+
+.summoney--intomoneyandunitprice {
+    display: flex;
+    margin: 0 auto;
+}
+
+.summoney__currency {
+    display: flex;
+}
+
+.summoney--unitprice {
+    color: red;
+    text-decoration: underline;
+    font-weight: bold;
+    margin-left: 2px;
+}
+
+.summoney--labelsum {
+    margin-right: 5px;
+}
+
+.summoney--item {
+    margin-bottom: 15px;
+}
+
+.summoney--payment {
+    width: 100%;
+    padding: 8px 0 7px 0;
+    border-radius: 5px;
+    border: none;
+    background: #3ba66b;
+    color: white  ;
+}
+
+.summoney--payment:hover {
+    cursor: pointer;
+    background-color: #FFC107;
+}
+
+/* The end add products */
 
 .btn--continueshopping {
     bottom: 0;
