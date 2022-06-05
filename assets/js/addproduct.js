@@ -5,7 +5,7 @@ var products = [
         price: 20,
         quantity: 1,
         weight: 1,
-        imgSRC: '/assets/images/sp1.webp'
+        imgSRC: './assets/images/sp1.webp'
     },
     {
         id: 2,
@@ -13,7 +13,7 @@ var products = [
         price: 40,
         quantity: 1,
         weight: 1,
-        imgSRC: '/assets/images/sp2.webp'
+        imgSRC: './assets/images/sp2.webp'
     },
     {
         id: 3,
@@ -21,7 +21,7 @@ var products = [
         price: 138,
         quantity: 1,
         weight: 1,
-        imgSRC: '/assets/images/sp3.webp'
+        imgSRC: './assets/images/sp3.webp'
     },
     {
         id: 4,
@@ -29,7 +29,7 @@ var products = [
         price: 30,
         quantity: 1,
         weight: 1,
-        imgSRC: '/assets/images/sp4.webp'
+        imgSRC: './assets/images/sp4.webp'
     },
     {
         id: 5,
@@ -37,7 +37,7 @@ var products = [
         price: 138,
         quantity: 1,
         weight: 1,
-        imgSRC: '/assets/images/sp5.webp'
+        imgSRC: './assets/images/sp5.webp'
     },
 ];
 
