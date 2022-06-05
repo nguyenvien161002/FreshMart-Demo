@@ -66,7 +66,7 @@
                     </li>
                     <li class="list--item">
                         <a href="#" class="navright-item ti-bag js-btn-cartshopping">
-                            <span class="notification">0</span>
+                            <span class="notification js--cartnotification">0</span>
                         </a>
                     </li>
                     <li class="list--item user">
@@ -138,6 +138,13 @@
                     </div>
                 </div>
             </div>
+        </div>
+        <div class="containItemCart">
+            <div class="sectiontwo-item js-nameproduct" id="1"></div>
+            <div class="sectiontwo-item js-nameproduct" id="2"></div>
+            <div class="sectiontwo-item js-nameproduct" id="3"></div>
+            <div class="sectiontwo-item js-nameproduct" id="4"></div>
+            <div class="sectiontwo-item js-nameproduct" id="5"></div>
         </div>
     </div>
       <!-- FOOTER -->
@@ -287,14 +294,29 @@
             </div>  
         </div>
         <div class="modal__cartshopping js-modal__cartshopping">
-            <div class="modal__cartshpping--inner">
+            <div class="modal__cartshpping--inner js--modal__cartshpping">
                 <div class="modal__cartshopping--header">
-                    <h3>GIỎ HÀNG</h3>
+                    <h4>GIỎ HÀNG</h4>
                     <button class="ti-close cartshopping--icon js-btn-close"></button>
                 </div>
-                <div class="modal__cartshopping--content">
+                <div class="modal__cartshopping--noproduct js--noproduct">
                     <img src="./assets/images/mobile-shopping.svg" alt="">
                     <button class="btn--continueshopping">Tiếp tục mua hàng</button>
+                </div>
+                <div class="container__cartitem js--container__cartitem"></div>
+                <div class="summoney js--summoney">
+                    <span class="summoney--separate summoney--item"></span>
+                    <div class="summoney-labelandsum summoney--item">
+                        <p class="summoney--labelsum">Tổng tiền:</p>
+                        <div class="summoney--intomoneyandunitprice">
+                            <div class="summoney__currency">
+                                <p class="summoney--intomoney js__intomoney">500</p>
+                                <p>.000</p>
+                            </div>
+                            <p class="summoney--unitprice">đ</p>
+                        </div>
+                    </div>
+                    <button class="summoney--payment summoney--item">Thanh toán</button>
                 </div>
             </div>
         </div>
@@ -328,6 +350,7 @@
         </div>
     </div>
     <script src="./assets/js/index.js"></script>
+    <script src="./assets/js/addproduct.js"></script>
     <script src="https://apis.google.com/js/platform.js" async defer></script>
 </body>
 </html>

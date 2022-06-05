@@ -195,18 +195,13 @@ html {
     position: absolute;
     background: #ffb416;
     color: #fff;
-    opacity: 0;
     height: 20px;
     width: 20px;
     text-align: center;
     font-size: 16px;
     border-radius: 50%;
     top: 0;
-    right: -7px;
-}
-
-.notification.opacity {
-    opacity: 1;
+    right: -10px;
 }
 
 .signupsignin {

@@ -65,7 +65,7 @@
                     </li>
                     <li class="list--item">
                         <a href="#" class="navright-item ti-bag js-btn-cartshopping">
-                            <p class="notification js--notification">0</p>
+                            <p class="notification js--cartnotification">0</p>
                         </a>
                     </li>
                     <li class="list--item user">
@@ -121,7 +121,7 @@
                         <i class="ti-heart"></i>
                     </div>
                     <div class="content-details--item content-details--info">
-                        <h3 class="info-name js-nameproduct">Chanh tươi vỏ xanh</h3>
+                        <h3 class="info-name js-nameproduct" id="4">Chanh tươi vỏ xanh</h3>
                         <p class="info-SKU">SKU: (<a>Đang cập nhật...</a>)</p>
                         <div class="info-priceandrprice">
                             <p class="info-price js--price">30.000<span>đ</span></p>
@@ -433,13 +433,14 @@
                     <img src="./assets/images/mobile-shopping.svg" alt="">
                     <button class="btn--continueshopping">Tiếp tục mua hàng</button>
                 </div>
+                <div class="container__cartitem js--container__cartitem"></div>
                 <div class="summoney js--summoney">
                     <span class="summoney--separate summoney--item"></span>
                     <div class="summoney-labelandsum summoney--item">
                         <p class="summoney--labelsum">Tổng tiền:</p>
                         <div class="summoney--intomoneyandunitprice">
                             <div class="summoney__currency">
-                                <p class="summoney--intomoney js--intomoney">500</p>
+                                <p class="summoney--intomoney js__intomoney">500</p>
                                 <p>.000</p>
                             </div>
                             <p class="summoney--unitprice">đ</p>
@@ -480,6 +481,8 @@
     </div>
     <script src="./assets/js/index.js"></script>
     <script src="./assets/js/addproduct.js"></script>
+    <script src="./assets/js/imagesgallery.js"></script>
+    <script src="./assets/js/changenumberof.js"></script>
     <script src="https://apis.google.com/js/platform.js" async defer></script>
 </body>
 </html>

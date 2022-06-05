@@ -11,6 +11,7 @@
 
 html {
     font-family: 'Roboto', -apple-system, Arial, Helvetica, sans-serif;
+    scroll-behavior: smooth;
 }
 
 .width_86 {
@@ -76,7 +77,7 @@ html {
     background-color: #fff;
     list-style: none;
     box-shadow: 0px 9px 15px 10px rgb(0 0 0 / 5%);
-    animation: Grow ease-in 0.2s;
+    animation: Grow ease-in 0.3s;
     transform-origin: calc(100% - 170px) top;
     display: none;
 }
@@ -204,6 +205,8 @@ html {
     right: -10px;
     text-align: center;
 }
+
+
 
 .signupsignin {
     position: absolute;
