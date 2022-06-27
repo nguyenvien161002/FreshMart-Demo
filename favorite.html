@@ -24,7 +24,7 @@
                     <li class="nav-item">
                         <a href="./introduction.html">Giới thiệu</a>
                     </li>
-                    <li class="nav-item nav-product ">
+                    <li class="nav-item nav-product">
                         <div class="nav-product">
                             <a href="./products.html">Sản phẩm <i class="fa-solid fa-caret-down nav-arrow-icon"></i></a>
                         </div>
@@ -51,7 +51,9 @@
                 </ul>
             </div>
             <div class="nav-between-logo">
-                <a href="./index.html"><img src="./assets/images/logo.webp" alt="logo" class="nav-logo"></a>
+                <a href="./index.html">
+                    <img src="./assets/images/logo.webp" alt="logo" class="nav-logo">
+                </a>
             </div>
             <div class="nav-right">
                 <div class="search">
@@ -61,12 +63,12 @@
                 <ul class="nav-right-list">
                     <li class="list--item">
                         <a href="./favorite.html" class="navright-item ti-heart">
-                            <span class="notification">0</span>
+                            <p class="notification">0</p>
                         </a>
                     </li>
                     <li class="list--item">
                         <a href="#" class="navright-item ti-bag js-btn-cartshopping">
-                            <span class="notification">0</span>
+                            <p class="notification js--cartnotification">0</p>
                         </a>
                     </li>
                     <li class="list--item user">
@@ -105,6 +107,16 @@
             <div class="content-item content-description">
                 <p>Bạn chưa có sản phẩm yêu thích, <a href="">vào đây</a> để thêm thật nhiều sản phẩm yêu thích nào.</p>
             </div>
+        </div>
+        <div class="containItemCart">
+            <div class="sectiontwo-item js-nameproduct" id="1"></div>
+            <div class="sectiontwo-item js-nameproduct" id="2"></div>
+            <div class="sectiontwo-item js-nameproduct" id="3"></div>
+            <div class="sectiontwo-item js-nameproduct" id="4"></div>
+            <div class="sectiontwo-item js-nameproduct" id="5"></div>
+        </div>
+        <div class="containerProduct js__containerProduct width_86 width_94 m-lr-auto">
+
         </div>
     </div>
     <!-- FOOTER -->
@@ -192,7 +204,7 @@
                             <input type="password" name="" placeholder="Mật khẩu">
                         </div>
                         <div class="authform__help">
-                            <button class="authform__help--register">Đăng nhập</button>
+                            <button class="authform__help--register">Đăng ký</button>
                         </div>
                         <div class="authform__separate">
                             <span>Hoặc đăng nhập qua</span>
@@ -254,14 +266,29 @@
             </div>  
         </div>
         <div class="modal__cartshopping js-modal__cartshopping">
-            <div class="modal__cartshpping--inner">
+            <div class="modal__cartshpping--inner js--modal__cartshpping">
                 <div class="modal__cartshopping--header">
-                    <h3>GIỎ HÀNG</h3>
+                    <h4>GIỎ HÀNG</h4>
                     <button class="ti-close cartshopping--icon js-btn-close"></button>
                 </div>
-                <div class="modal__cartshopping--content">
+                <div class="modal__cartshopping--noproduct js--noproduct">
                     <img src="./assets/images/mobile-shopping.svg" alt="">
                     <button class="btn--continueshopping">Tiếp tục mua hàng</button>
+                </div>
+                <div class="container__cartitem js--container__cartitem"></div>
+                <div class="summoney js--summoney">
+                    <span class="summoney--separate summoney--item"></span>
+                    <div class="summoney-labelandsum summoney--item">
+                        <p class="summoney--labelsum">Tổng tiền:</p>
+                        <div class="summoney--intomoneyandunitprice">
+                            <div class="summoney__currency">
+                                <p class="summoney--intomoney js__intomoney">500</p>
+                                <p>.000</p>
+                            </div>
+                            <p class="summoney--unitprice">đ</p>
+                        </div>
+                    </div>
+                    <button class="summoney--payment summoney--item js__summoney--payment">Thanh toán</button>
                 </div>
             </div>
         </div>
@@ -295,6 +322,8 @@
         </div>
     </div>
     <script src="./assets/js/index.js"></script>
+    <script src="./assets/js/addproducttocart.js"></script>
+    <script src="./assets/js/addproducttofavorite.js"></script>
     <script src="https://apis.google.com/js/platform.js" async defer></script>
 </body>
 </html>

@@ -457,4 +457,184 @@ html {
     margin-left: -2px;
 }
 
+/* CSS RENDER PRODUCT TO FAVORITE */
+.containerProduct {
+    display: grid;
+    grid-template-columns: auto auto auto auto auto;
+    grid-gap: 20px;
+}
+
+.sectiontwo {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 0 20px;
+    border: 2px solid #de2828;
+    border-radius: 20px;
+    margin-top: 85px;
+    position: relative;
+    z-index: 1;
+    grid-column: 1 / 5;
+}
+
+.sectiontwo-about {
+    display: flex;
+    margin: 63px 0 20px ;
+    z-index: 1;
+}
+
+.sectiontwo-item:last-child {
+    border: none;
+}
+
+.sectiontwo-item:last-child img {
+    margin-right: 0 !important;
+}
+
+.sectiontwo-item {
+    border-right: 1px solid rgb(218, 215, 215);
+    text-align: center;
+    position: relative;
+    cursor: pointer;
+}
+
+.sectiontwo-item .item-sp {
+    font-size: 15px;
+    overflow: hidden;
+}
+
+.sectiontwo-item .item-sp:last-child {
+    margin-bottom: 20px;
+}
+
+.sectiontwo-item .item-sp > a:hover {
+    color: #ffb416;
+}
+
+.sectiontwo-item .item-sp img {
+    max-width: 100%;
+    transition: all 0.5s;
+}
+
+.sectiontwo-item:hover .item-sp img {
+    transform: scale(1.05);
+    transition: all 0.5s;
+}
+
+.sectiontwo-item:hover .item-loveandsetting {
+    display: block;
+    animation: showLandS ease 0.5s;
+}
+
+@keyframes showLandS {
+    from {
+        transform: translateY(40px);
+        opacity: 0;
+    }
+    to {
+        transform: translateY(0);
+        opacity: 1;
+    }
+}
+
+.item-sp .item-sp--name {
+    text-decoration: none;
+    color: #000;
+    font-size: 15px;
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+
+.sectiontwo-item .item-rprice {
+    background-color: #F14E18;
+    position: absolute;
+    padding: 4px 10px;
+    border-radius: 10px 0px;
+    color: #fff;
+    font-weight: 600;
+    font-size: 14px ;
+    z-index: 1;
+    top: 0;
+    left: 0;
+}
+
+.sectiontwo-item .item-loveandsetting {
+    position: absolute;
+    bottom: 25%;
+    right: calc(50% - 52px);
+    z-index: 10;
+    display: none;
+}
+
+.sectiontwo-item .item-loveandsetting a {
+    text-decoration: none;
+}
+
+.sectiontwo-item .item-loveandsetting a:first-child button {
+    background-color: red;
+}
+
+.sectiontwo-item .item-loveandsetting button {
+    padding: 10px;
+    border: none;
+    color: #fff;
+    font-size: x-large;
+    background-color: red;
+    border-radius: 50%;
+    margin: 3px;
+    cursor: pointer;
+}
+
+.sectiontwo-item .item-loveandsetting button:last-child {
+    background-color: #3ba66b;
+}
+
+.sectiontwo-item .item-loveandsetting button:hover {
+    background-color: #ffb416 !important;
+}
+
+.item-sp-price {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.item-sp-price p {
+    padding: 0px 5px;
+    margin-top: 10px;
+}
+
+.item-sp-price .item-sp--cost {
+    color: #eb3e32;
+    font-weight: bold;
+}
+
+.item-sp-price .item-sp--rprice {
+    font-size: 13px;
+    opacity: 0.5;
+    text-decoration: line-through;
+}
+
+.item-sp-price .item-sp--cost a,
+.item-sp-price .item-sp--rprice a {
+    text-decoration: underline;
+}
+
+.sectionfour-item {
+    border: 1px solid #ccc !important;
+    border-radius: 10px ;
+}
+
+.sectionfour-item:nth-child(5) {
+    margin-right: 0 !important;
+}
+
+.sectionfour-item:last-child {
+    margin-right: 0px;
+}
+
+.sectionfour-item .item-sp img {
+    margin: 0px;
+    padding: 10px;
+}
+
 /* THE END CSS WEB */

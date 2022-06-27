@@ -108,33 +108,44 @@
                         <i class="ti-angle-up"></i>
                     </div>
                     <div class="content-slide--gallery">
-                        <img src="./assets/images/sp10.webp" alt="" class="content-slide--item">
-                        <img src="./assets/images/sp10.2.webp" alt="" class="content-slide--item">
-                        <img src="./assets/images/sp10.3.webp" alt="" class="content-slide--item">
+                        <img src="./assets/images/sp10.webp" alt="" class="content-slide--item js--imagegallery">
+                        <img src="./assets/images/sp10.2.webp" alt="" class="content-slide--item js--imagegallery">
+                        <img src="./assets/images/sp10.3.webp" alt="" class="content-slide--item js--imagegallery">
                     </div>
                     <div class="content-slide--icon">
                         <i class="ti-angle-down"></i>
                     </div>
                 </div>
                 <div class="content-item content-details">
-                    <div class="content-details--item content-details--imggreenbellpepper">
+                    <div class="content-details--item content-details--imgguava js--imgproduct">
+                        <img src="./assets/images/sp10.webp" alt="" class="imgproduct">
                         <i class="ti-heart"></i>
                     </div>
                     <div class="content-details--item content-details--info">
-                        <h3>Ớt chuông xanh</h3>
+                        <h3 class="info-name js-nameproduct" id="1">Ớt chuông xanh</h3>
                         <p class="info-SKU">SKU: (<a>Đang cập nhật...</a>)</p>
-                        <p class="info-price">12.000<span>đ</span></p>
-                        <p class="info-des-tomato">Ớt chuông, hay còn gọi là ớt ngọt (gọi là pepper ở Vương quốc Liên hiệp Anh và Bắc Ireland, Canada, Ireland hay capsicum ở Ấn Độ, Bangladesh, Úc, Singapore và New Zealand), là quả của một nhóm cây trồng, loài Capsicum annuum.</p>
-                        <div class="content-details--weight">
+                        <div class="info-priceandrprice">
+                            <p class="info-price js--price">12.000<span>đ</span></p>
+                        </div>
+                        <p class="info-des">Ớt chuông, hay còn gọi là ớt ngọt (gọi là pepper ở Vương quốc Liên hiệp Anh và Bắc Ireland, Canada, Ireland hay capsicum ở Ấn Độ, Bangladesh, Úc, Singapore và New Zealand), là quả của một nhóm cây trồng, loài Capsicum annuum.</p>
+                        <div class="content-details--weight js--weightproduct">
                             <p>Trọng lượng:</p>
-                            <button>500kg</button>
-                            <button>1kg</button>
+                            <button class="js--btnweight1">500kg</button>
+                            <button class="js--btnweight2">1kg</button>
                         </div>
                         <div class="content-details--amount">
                             <p>Số lượng:</p>
                             <div class="incr-and-decr">
-                                <a><i class="ti-minus"></i>1<i class="ti-plus"></i></a>
-                                <button>MUA NGAY</button>
+                                <div class="quantityadapter">
+                                    <button class="quantityadapter-item minus js--minus">
+                                        <i class="ti-minus"></i>
+                                    </button>
+                                    <input type="text" name="" id="" value="1" class="enterquantity js--enterquantity">
+                                    <button class="quantityadapter-item plus js--plus">
+                                        <i class="ti-plus"></i>
+                                    </button>
+                                </div>
+                                <button class="buynow">MUA NGAY</button>
                             </div>
                         </div>
                         <button class="content-details--add js--btnaddproduct">THÊM VÀO GIỎ HÀNG</button>
@@ -399,14 +410,29 @@
             </div>  
         </div>
         <div class="modal__cartshopping js-modal__cartshopping">
-            <div class="modal__cartshpping--inner">
+            <div class="modal__cartshpping--inner js--modal__cartshpping">
                 <div class="modal__cartshopping--header">
-                    <h3>GIỎ HÀNG</h3>
+                    <h4>GIỎ HÀNG</h4>
                     <button class="ti-close cartshopping--icon js-btn-close"></button>
                 </div>
-                <div class="modal__cartshopping--content">
+                <div class="modal__cartshopping--noproduct js--noproduct">
                     <img src="./assets/images/mobile-shopping.svg" alt="">
                     <button class="btn--continueshopping">Tiếp tục mua hàng</button>
+                </div>
+                <div class="container__cartitem js--container__cartitem"></div>
+                <div class="summoney js--summoney">
+                    <span class="summoney--separate summoney--item"></span>
+                    <div class="summoney-labelandsum summoney--item">
+                        <p class="summoney--labelsum">Tổng tiền:</p>
+                        <div class="summoney--intomoneyandunitprice">
+                            <div class="summoney__currency">
+                                <p class="summoney--intomoney js__intomoney">500</p>
+                                <p>.000</p>
+                            </div>
+                            <p class="summoney--unitprice">đ</p>
+                        </div>
+                    </div>
+                    <button class="summoney--payment summoney--item js__summoney--payment">Thanh toán</button>
                 </div>
             </div>
         </div>
@@ -440,6 +466,9 @@
         </div>
     </div>
     <script src="./assets/js/index.js"></script>
+    <script src="./assets/js/addproducttocart.js"></script>
+    <script src="./assets/js/imagesgallery.js"></script>
+    <script src="./assets/js/changenumberof.js"></script>
     <script src="https://apis.google.com/js/platform.js" async defer></script>
 </body>
 </html>

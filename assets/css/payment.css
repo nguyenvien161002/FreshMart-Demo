@@ -1,0 +1,270 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    scroll-behavior: smooth;
+}
+
+.container {
+    margin: 0 100px;
+    height: 100vh;
+    display: flex;
+}
+
+.information-form {
+    width: 65%;
+    padding: 30px 30px 0 30px;
+    border-right: 1px solid rgba(179, 179, 179, 0.7);
+}
+
+.header {
+    padding-bottom: 20px;
+}
+
+.content {
+    display: flex;
+    justify-content: space-between;
+    padding: 5px;
+}
+
+.goodrecinfo {
+    width: 48.5%;
+}
+
+.goodrecinfo__title {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 13px;
+}
+
+.login {
+    display: flex;
+    align-items: center;
+    cursor: pointer;
+}
+
+.login i {
+    margin-right: 7px;
+    font-size: 20px;
+}
+
+.goodrecinfo__title label {
+    font-size: 18px;
+    font-weight: bold;
+    color: #333;
+}
+
+.goodrecinfo__inputform {
+    display: flex; 
+    flex-direction: column;
+}
+
+.goodrecinfo__inputform textarea,
+.goodrecinfo__inputform input {
+    padding: 12px;
+    border-radius: 3px;
+    margin-bottom: 10px;
+    border: 1px solid #ccc;
+}
+
+.goodrecinfo__inputform textarea {
+    height: 75px;
+}
+
+.transport-pay {
+    width: 48.5%;
+    color: #545454;
+}
+
+.transport-pay--item {
+    margin-bottom: 20px;
+}
+
+.transport-pay--item label {
+    font-size: 18px;
+    font-weight: bold;
+    margin-bottom: 13px;
+    display: block;
+}
+
+.transport-fee {
+    display: flex;
+    justify-content: space-between;
+    border: 1px solid #ccc;
+    border-radius: 3px;
+    padding: 12px;
+}
+
+.transport-fee div {
+    display: flex;
+    align-items: center;
+}
+
+.transport-fee p {
+    margin-bottom: 2px;
+}
+
+.circle {
+    width: 18px;
+    height: 18px;
+    border: 7.2px solid;
+    border-radius: 50%;
+    color: black;
+    margin-right: 5px;
+    display: block;
+}
+
+.checkbox {
+    width: 18px;
+    height: 18px;
+    background-color: black !important;
+    margin-right: 5px;
+    border: 1px solid;
+}
+
+.price {
+    margin: 0;
+}
+
+.price i {
+    font-size: 22px;
+}
+
+/* SIDEBAR */
+.sidebar { 
+    width: 35%;
+}
+
+.orders {
+    display: block;
+    padding: 15px 30px;
+    font-size: 22px;
+    font-weight: 600;
+    border-bottom: 1px solid #ccc;
+}
+
+.sidebar-item {
+    margin: 0 30px;
+    padding: 15px 0 15px 0;
+    border-bottom: 1px solid #ccc;
+}
+
+.sidebar-item:last-child {
+    border-bottom: 0;
+}
+
+.product {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 15px;
+}
+
+.product:last-child {
+    margin-bottom: 0;
+}
+
+.img-price {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.product .price {
+    color: #888;
+    font-size: 14px;
+}
+
+.name-product {
+    margin-left: 7px;
+}
+
+.product img {
+    width: 50px;
+    border-radius: 4px;
+    border: 1px solid #ccc;
+}
+
+.rprice {
+    display: flex;
+    justify-content: space-between;
+}
+
+.rprice input {
+    padding: 13px;
+    border: 1px solid #ccc;
+    border-radius: 3px;
+    width: 72%;
+}
+
+.btn-applied {
+    width: 26%;
+    border-radius: 4px;
+    border: 1px solid #ccc;
+    background-color: #646464;
+    color: #fff;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+.p-calculation label {
+    margin-bottom: 10px;
+}
+
+.total-money {
+    color: #646464;
+}
+
+.total-money--item {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.sidebar-transport-fee {
+    border-bottom: 1px solid #ccc;
+    padding-bottom: 20px;
+}
+
+.cost,
+.price-transport {
+    font-size: 14px;
+}
+
+.total {
+    padding-top: 10px;
+}
+
+.total label {
+    margin-bottom: 10px;
+}
+
+.total-cost {
+    font-size: 20px;
+    color: #000;
+    padding-bottom: 12px;
+    font-weight: 400;
+}
+
+.btns a {
+    color: #000;
+    text-decoration: none;
+}
+
+.btn-order {
+    width: 120px;
+    height: 44px;
+    border-radius: 5px;
+    border: 1px solid #ccc;
+    color: white;
+    background-color: #000;
+    font-size: 16px;
+    font-weight: 400;
+    cursor: pointer;
+}
+
+

@@ -6,7 +6,7 @@ var intQuantity = parseInt(valueQuantity.value);
 
 btnMinus.addEventListener('click', function(){
     if(intQuantity==0){
-        return
+        return;
     } else {
         intQuantity--;
         valueQuantity.value= intQuantity;

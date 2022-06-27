@@ -25,7 +25,7 @@
                         <li class="nav-item">
                             <a href="./introduction.html">Giới thiệu</a>
                         </li>
-                        <li class="nav-item nav-product ">
+                        <li class="nav-item nav-product">
                             <div class="nav-product">
                                 <a href="./products.html">Sản phẩm <i class="fa-solid fa-caret-down nav-arrow-icon"></i></a>
                             </div>
@@ -52,7 +52,9 @@
                     </ul>
                 </div>
                 <div class="nav-between-logo">
-                    <a href="./index.html"><img src="./assets/images/logo.webp" alt="logo" class="nav-logo"></a>
+                    <a href="./index.html">
+                        <img src="./assets/images/logo.webp" alt="logo" class="nav-logo">
+                    </a>
                 </div>
                 <div class="nav-right">
                     <div class="search">
@@ -152,7 +154,7 @@
                                 <p>- 60%</p>
                             </div>
                             <div class="item-loveandsetting">
-                                <a href="">
+                                <a href="" class="js__favorite">
                                     <button class="ti-heart"></button>
                                 </a>
                                 <a href="./guava.html">
@@ -178,7 +180,7 @@
                         </div>
                         <div class="item-loveandsetting">
                             <a href="">
-                                <button class="ti-heart"></button>
+                                <button class="ti-heart "></button>
                             </a>
                             <a href="./redpeachUSA.html">
                                 <button class="ti-settings"></button>
@@ -633,7 +635,7 @@
                         </div>
                         <div class="item-description">
                             <div class="item-title">
-                                <a href="./subnew1st.html" >Đi chợ online: Xu hướng lên ngôi mùa dịch Covid-19</a>
+                                <a href="./subnew1st.html">Đi chợ online: Xu hướng lên ngôi mùa dịch Covid-19</a>
                             </div>
                             <div class="item-author">
                                 <p>Tác giả: Clover | 23/03/2022</p>
@@ -706,7 +708,7 @@
                             <input type="text" placeholder="Nhập email của bạn">
                         </div>
                        <div class="signup-btn">
-                            <button class="js-btn-register">Đăng ký</button>
+                            <button class="js-btn-registerfooter">Đăng ký</button>
                        </div>
                     </div>
                 </div>
@@ -774,7 +776,7 @@
                                 <input type="password" name="" placeholder="Mật khẩu">
                             </div>
                             <div class="authform__help">
-                                <button class="authform__help--register">Đăng nhập</button>
+                                <button class="authform__help--register">Đăng ký</button>
                             </div>
                             <div class="authform__separate">
                                 <span>Hoặc đăng nhập qua</span>
@@ -858,7 +860,7 @@
                                 <p class="summoney--unitprice">đ</p>
                             </div>
                         </div>
-                        <button class="summoney--payment summoney--item">Thanh toán</button>
+                        <button class="summoney--payment summoney--item js__summoney--payment">Thanh toán</button>
                     </div>
                 </div>
             </div>
@@ -894,7 +896,8 @@
     </div>
     <!-- JAVASCRIP -->
     <script src="./assets/js/index.js"></script>
-    <script src="./assets/js/addproduct.js"></script>
+    <script src="./assets/js/addproducttocart.js"></script>
+    <script src="./assets/js/addproducttofavorite.js"></script>
     <script src="https://apis.google.com/js/platform.js" async defer></script>
 </body>
 </html>

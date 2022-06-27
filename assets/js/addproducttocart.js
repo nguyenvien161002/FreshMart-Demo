@@ -55,16 +55,26 @@ updateCart();
 
 btnAdd && btnAdd.addEventListener('click', function(){
     addToCart(productID);
+    showModalCart();
 });
 
 function addToCart(id) {
-    if(cart.some(function(item){return item.id === id})){
-        alert('Exsits product!');
+    let quantityProduct = document.querySelector('.js--enterquantity');
+    let intQttProduct = parseInt(quantityProduct.value);
+    if(cart.some(function(item){return item.id === id})) {
+        cart.forEach(function(item) {
+            if(item.id === id){
+                return item.quantity += intQttProduct;
+            }
+        })
     } else {
-        const item = products.find(function(product){
+        const item = products.find(function(product) {
             return product.id === id;
         });
-        cart.push(item)
+        cart.push({
+            ...item, 
+            quantity: intQttProduct
+        });
     }
     updateCart();
 }
@@ -73,11 +83,12 @@ function updateCart() {
     renderCartItem();
     localStorage.setItem('CART', JSON.stringify(cart));
     notiCart.innerText = cart.length; 
-    if(cart.length==0){
+    if(cart.length==0) {
         noCartItem.classList.remove('hidden');
         payment.classList.remove('show');
     }
     totalMoneyToCart();
+    changeNumberOfUnits();
 }
 
 function totalMoneyToCart() {
@@ -105,9 +116,9 @@ function renderCartItem(){
                     </div>
                     <div class="infoproduct__button">
                         <label for="">Số lượng: </label>
-                        <button class="infoproduct__button--decrease" onclick="changeNumberOfUnits('minus', ${item.id})">-</button>
+                        <button class="infoproduct__button--decrease" data-id="${item.id}">-</button>
                         <input class="quantity js__quantity" value="${item.quantity}"></input>
-                        <button class="infoproduct__button--increase" onclick="changeNumberOfUnits('plus', ${item.id})">+</button>
+                        <button class="infoproduct__button--increase" data-id="${item.id}">+</button>
                     </div>
                     <div class="infoproduct__priceproduct">
                         <p class="priceproduct--labelprice">Giá: </p> 
@@ -120,29 +131,42 @@ function renderCartItem(){
     })
     payment.classList.add('show'); 
     var btnsRemoveItemCart = document.querySelectorAll('.btn__removeItemCart');
-    btnsRemoveItemCart.forEach((itemBtnRemove,index) => {
-        itemBtnRemove.addEventListener('click', function(){
+    btnsRemoveItemCart.forEach((btnRemove,index) => {
+        btnRemove.addEventListener('click', function(){
             cart.splice(index, 1);
-            console.log(itemBtnRemove.getAttribute('data-id'));
             updateCart();
         })
     })
 };
 
-// Không thể để Logic xóa 1 sản phẩm của cart bên ngoài hàm renderCartItem(), 
-// bời vì mỗi lần render lại cart item thì các btnRomove sẽ được tạo mới trong cây DOM 
-// tại thời điểm này file js này đã được thực thi nên các btnRomove lúc này sẽ ko có clickEvent
-// =>> không xóa đc sản phẩm trong cart nx.
 
-// var btnsRemoveItemCart = document.querySelectorAll('.btn__removeItemCart');  
-// btnsRemoveItemCart.forEach((itemBtn,index) => {
-//     itemBtn.addEventListener('click', function(){
-//         cart.splice(index, 1);
-//         console.log(itemBtn.getAttribute('data-id'));
-//         updateCart();
-//     })
-// })
+function changeNumberOfUnits(){
+    cart.forEach(function(item){
+        var btnToDecrease = document.querySelectorAll('.infoproduct__button--decrease');
+        var btnToIncrease = document.querySelectorAll('.infoproduct__button--increase');
+        
+        btnToDecrease.forEach(function(btn) {
+            if(item.id == btn.getAttribute("data-id")){
+                btn.addEventListener('click',function(){
+                    item.quantity--;
+                    if(item.quantity<1){
+                        item.quantity=1;
+                    }
+                    updateCart();
+                })
+            }
+        });
 
+        btnToIncrease.forEach(function(btn) {
+            if(item.id == btn.getAttribute("data-id")){
+                btn.addEventListener('click',function(){
+                    item.quantity++;
+                    updateCart();
+                })
+            }
+        });
+    })
+}
 
 
 

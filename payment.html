@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Fresh Mart | Thanh toán đơn hàng</title>
+    <link rel="icon" type="image/x-icon" href="./assets/images/logo2.webp">
+    <link rel="stylesheet" href="./assets/themify-icons-font/themify-icons/themify-icons.css">
+    <link rel="stylesheet" href="./assets/fontawesome-free-6.1.1/fontawesome-free-6.1.1-web/css/all.min.css">
+    <link rel="stylesheet" href="./assets/css/payment.css">
+</head>
+<body>
+    <div class="container">
+        <div class="information-form">
+            <div class="header">
+                <img src="./assets/images/logotulam.png" alt="">
+            </div>
+            <div class="content">
+                <div class="goodrecinfo">
+                    <div class="goodrecinfo__title">
+                        <label for="">Thông tin nhận hàng</label>
+                        <p class="login"><i class="fa-solid fa-circle-user"></i>Đăng nhập</p>
+                    </div>
+                    <div class="goodrecinfo__inputform">
+                        <input type="email" placeholder="Email">
+                        <input type="name" placeholder="Họ và tên">
+                        <input type="tel" placeholder="Số điện thoại">
+                        <input type="adress" placeholder="Địa chỉ (tùy chọn)">
+                        <input type="options" placeholder="Tỉnh thành">
+                        <input type="options" placeholder="Quận huyện">
+                        <input type="options" placeholder="Phường xã">
+                        <textarea placeholder="Ghi chú (tùy chọn)"></textarea>
+                    </div>
+                </div>
+                <div class="transport-pay">
+                    <div class="transport transport-pay--item">
+                        <label>Vận chuyển</label>
+                        <div class="transport-fee">
+                            <div>
+                                <span class="circle"></span>
+                                <p>Giao hàng tận nơi</p>
+                            </div>
+                            <p class="price">40.000đ</p>
+                        </div>
+                    </div>
+                    <div class="pay transport-pay--item">
+                        <label>Thanh toán</label>
+                        <div class="transport-fee">
+                            <div>
+                                <input type="radio" class="checkbox">
+                                <p>Thanh toán khi giao hàng</p>
+                            </div>
+                            <p class="price"><i class="fa-solid fa-money-bill-1"></i></p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="sidebar">
+            <label for="" class="orders">Đơn hàng</label>
+            <div class="products sidebar-item">
+                <div class="product">
+                    <div class="img-price">
+                        <img src="./assets/images/sp1.webp" alt="">
+                        <p class="name-product">Ổi lê ruột đỏ - 1kg</p>
+                    </div>
+                    <p class="price">20.000đ</p>
+                </div>
+                <div class="product">
+                    <div class="img-price">
+                        <img src="./assets/images/sp1.webp" alt="">
+                        <p class="name-product">Ổi lê ruột đỏ - 1kg</p>
+                    </div>
+                    <p class="price">20.000đ</p>
+                </div>
+                <div class="product">
+                    <div class="img-price">
+                        <img src="./assets/images/sp1.webp" alt="">
+                        <p class="name-product">Ổi lê ruột đỏ - 1kg</p>
+                    </div>
+                    <p class="price">20.000đ</p>
+                </div>
+            </div>
+            <div class="rprice sidebar-item">
+                <input type="text" name="" id="" placeholder="Nhập mã giảm giá">
+                <button class="btn-applied">Áp dụng</button>
+            </div>
+            <div class="total-money sidebar-item">
+                <div class="p-calculation total-money--item">
+                    <label for="">Tạm tính</label>
+                    <p class="cost">170.000đ</p>
+                </div>
+                <div class="sidebar-transport-fee total-money--item">
+                    <label for="">Phí vận chuyển</label>
+                    <p class="price-transport">40.000đ</p>
+                </div>
+                <div class="total total-money--item">
+                    <label for="">Tổng cộng</label>
+                    <p class="total-cost">210.000đ</p>
+                </div>
+                <div class="btns total-money--item">
+                    <a href=""><i class="fa-solid fa-angle-left"></i> Quay về trang chủ</a>
+                    <button class="btn-order">Đặt hàng</button>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+</html>

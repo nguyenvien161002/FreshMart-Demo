@@ -594,9 +594,8 @@ html {
     font-weight: bold;
 }
 
-.section-info--title li:first-child {
+.section-info--title .infoproduct {
     border-radius: 10px 0 0 0;
-    background-color: #ffb416;
 }
 
 .section-info--title li:last-child {
@@ -605,6 +604,10 @@ html {
 
 .section-info--title li:hover {
     background-color: #ffb416;
+}
+
+.bgyellow {
+    background-color: #ffb416 !important;
 }
 
 .section-info--des {

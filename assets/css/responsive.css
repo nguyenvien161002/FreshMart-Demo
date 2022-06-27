@@ -166,6 +166,10 @@
         margin-bottom: 20px;
     }
 
+    .summoney {
+        bottom: 37.5%;
+    }
+
 }
 /* MOBILE */
 @media (max-width: 46.1875em){

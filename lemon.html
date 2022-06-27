@@ -146,7 +146,7 @@
                                         <i class="ti-plus"></i>
                                     </button>
                                 </div>
-                                <button class="buynow">MUA NGAY</button>
+                                <button class="buynow js--buynow">MUA NGAY</button>
                             </div>
                         </div>
                         <button class="content-details--add js--btnaddproduct">THÊM VÀO GIỎ HÀNG</button>
@@ -177,20 +177,13 @@
             <div class="section-info">
                 <div class="section-info--title">
                     <ul>
-                        <li>THÔNG TIN SẢN PHẨM</li>
-                        <li>CHÍNH SÁCH ĐỔI TRẢ</li>
-                        <li>HƯỚNG DẪN BẢO QUẢN</li>
+                        <li class="infoproduct js--infoproduct ">THÔNG TIN SẢN PHẨM</li>
+                        <li class="returnpolicy js--returnpolicy">CHÍNH SÁCH ĐỔI TRẢ</li>
+                        <li class="storageinstructions js--storageinstructions">HƯỚNG DẪN BẢO QUẢN</li>
                     </ul>
                 </div>
-                <div class="section-info--des">
-                    <div class="des-product">
-                        <p>Chanh là một số loài thực vật cho quả nhỏ, thuộc chi Cam chanh (Citrus), khi chín có màu xanh hoặc vàng, thịt quả có vị chua. Quả chanh được sử dụng làm thực phẩm trên khắp thế giới - chủ yếu dùng nước ép của nó, thế nhưng phần cơm (các múi của chanh) và vỏ (zest) cũng được sử dụng, chủ yếu là trong nấu ăn và nướng bánh. Nước ép chanh chứa khoảng 5% (khoảng 0,3 mol / lít) axit citric, điều này giúp chanh có vị chua, và độ pH của chanh từ 2-3. Điều này làm cho nước ép chanh không đắt, có thể sử dụng thay axít cho các thí nghiệm khoa học trong giáo dục. Bởi vì có vị chua, nhiều thức uống và kẹo có mùi vị đã xuất hiện, bao gồm cả nước chanh.</p>
-                        <!-- <p>Tên gọi khoa học persica có lẽ có từ niềm tin ban đầu của người châu Âu cho rằng đào có nguồn gốc ở khu vực Ba Tư (Persia), nay là Iran. Sự đồng thuận lớn trong giới các nhà thực vật học ngày nay đã cho rằng nó có nguồn gốc từ Trung Quốc và được đưa vào Ba Tư cũng như khu vực Địa Trung Hải theo con đường tơ lụa vào khoảng thời gian ban đầu của lịch sử nhân loại, có lẽ vào khoảng thiên niên kỷ 2 TCN (Huxley và những người khác, 1992).</p>
-                        <p>Các giống đào trồng được chia thành hai loại là "hột rời" và "hột dính", phụ thuộc vào việc hột có dính với cùi thịt hay không; cả hai loại này đều có cùi thịt trắng hay vàng. Quả đào với cùi thịt trắng thông thường có vị rất ngọt và ít vị chua, trong khi loại có cùi thịt màu vàng thông thường có vị chua kèm theo vị ngọt, mặc dù điều này cũng có sự dao động lớn. Cả hai màu thông thường đều có các vệt đỏ trong lớp thịt của chúng. Loại đào cùi trắng, ít chua là phổ biến nhất tại Tru</p> -->
-                    </div>
-                    <!-- <p class="des-returngoods-maintain">ND Fresh là hệ thống cửa hàng thực phẩm sạch uy tín nhất ở Việt Nam, chuyên cung cấp thực phẩm sạch tới từng bếp ăn của gia đình bạn.
-                        Tầm nhìn: Được nuôi trồng, chế biến theo phương Bio (sinh học), Organic (hữu cơ), Eco (sinh thái); cam kết không bán hàng giả, hàng nhái và hàng kém chất lượng. Sản phẩm được giao đến tay khách hàng luôn đúng cam kết, đúng chất lượng niệm yết, luôn được bảo quản trong môi trường lý tưởng, đảm bảo vệ sinh an toàn thực phẩm.
-                        Mục tiêu: Sản phẩm được giao đến tay khách hàng luôn đúng cam kết, đúng chất lượng niệm yết, luôn được bảo quản trong môi trường lý tưởng, đảm bảo vệ sinh an toàn thực phẩm.</p> -->
+                <div class="section-info--des js--infodes">
+
                 </div>
             </div>
             <!-- Relatedproducts: sản phẩm liên quan, sản phẩm tương tự -->
@@ -446,7 +439,7 @@
                             <p class="summoney--unitprice">đ</p>
                         </div>
                     </div>
-                    <button class="summoney--payment summoney--item">Thanh toán</button>
+                    <button class="summoney--payment summoney--item js__summoney--payment">Thanh toán</button>
                 </div>
             </div>
         </div>
@@ -480,7 +473,9 @@
         </div>
     </div>
     <script src="./assets/js/index.js"></script>
-    <script src="./assets/js/addproduct.js"></script>
+    <script src="./assets/js/addproducttocart.js"></script>
+    <script src="./assets/js/addproducttofavorite.js"></script>
+    <script src="./assets/js/descriptionLemon.js"></script>
     <script src="./assets/js/imagesgallery.js"></script>
     <script src="./assets/js/changenumberof.js"></script>
     <script src="https://apis.google.com/js/platform.js" async defer></script>
