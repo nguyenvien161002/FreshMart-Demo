@@ -406,30 +406,25 @@ html {
 
 /* AGAIN CSS INDEX */
 .category-product {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: space-between;
-}
-
-.category-product .secition-item {
+    display: grid;
+    grid-template-columns: auto auto auto auto;
     margin-top: 20px;
-    border: 1px solid #ccc;
-    border-radius: 10px;
+    grid-gap: 20px;
+    width: inherit;
 }
 
 .sectiontwo-item {
+    border-radius: 10px;
+    border: 1px solid #ccc;
     text-align: center;
+    padding: 15px 0;
     position: relative;
-    cursor: pointer;
+    height: 315px;
 }
 
 .sectiontwo-item .item-sp {
     font-size: 15px;
-    max-width: 223px;
-}
-
-.sectiontwo-item .item-price {
-    margin-bottom: 14px;
+    width: 100%;
 }
 
 .sectiontwo-item .item-sp--img {
@@ -451,6 +446,7 @@ html {
     color: #000;
     font-size: 16px;
     letter-spacing: 1px;
+    line-height: 40px;
 }
 
 .sectiontwo-item .item-rprice {
@@ -473,7 +469,6 @@ html {
 
 .item-sp-price p {
     padding: 0px 5px;
-    margin-top: 10px;
 }
 
 .item-sp-price .item-sp--cost {

@@ -408,32 +408,22 @@ html {
 
 /* AGAIN CSS INDEX */
 .category-product {
-    display: flex;
-    flex-wrap: wrap;
+    display: grid;
+    grid-template-columns: auto auto auto auto;
+    margin-top: 20px;
+    grid-gap: 20px;
 }
 
 .category-product .secition-item {
-    margin-top: 20px;
     border: 1px solid #ccc;
     border-radius: 10px;
-    margin-right: 19.9248px;
-}
-
-.category-product .secition-item:nth-child(4) {
-    margin-right: 0;
-}
-
-.sectiontwo-item:last-child {
-    border: none;
 }
 
 .sectiontwo-item {
-    border-right: 1px solid rgb(218, 215, 215);
     text-align: center;
     position: relative;
     cursor: pointer;
 }
-
 
 .sectiontwo-item .item-sp {
     font-size: 15px;
@@ -441,7 +431,7 @@ html {
 }
 
 .sectiontwo-item .item-price {
-    margin-bottom: 14px;
+    padding: 15px;
 }
 
 .sectiontwo-item .item-sp--img {
@@ -463,6 +453,7 @@ html {
     color: #000;
     font-size: 16px;
     letter-spacing: 1px;
+    line-height: 40px;
 }
 
 .sectiontwo-item .item-rprice {
@@ -471,8 +462,10 @@ html {
     padding: 4px 10px;
     border-radius: 10px 0px;
     color: #fff;
-    font-weight: 550;
+    font-weight: bold;
     font-size: 14px ;
+    top: 0;
+    left: 0;
 }
 
 .item-sp-price {
@@ -482,8 +475,6 @@ html {
 }
 
 .item-sp-price p {
-    padding: 0px 5px;
-    margin-top: 10px;
 }
 
 .item-sp-price .item-sp--cost {
@@ -496,6 +487,7 @@ html {
     font-size: 14px;
     opacity: 0.5;
     text-decoration: line-through;
+    margin-left: 10px;
 }
 
 .item-sp-price .item-sp--cost a,
@@ -531,7 +523,6 @@ html {
     background-color: #ffb416;
     color: #fff;
 }
-
 
 /* FOOTER */
 #footer { 

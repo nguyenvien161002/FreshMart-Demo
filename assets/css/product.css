@@ -737,6 +737,13 @@ html {
     text-align: center;
 }
 
+#footer .footer-first {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+
 #footer .footer-item {
     width: 33.33333%;
     padding: 0px 50px;
@@ -754,6 +761,7 @@ html {
 
 .footer-item .signup-text-btn {
     display: flex;
+    position: relative;
     margin: 0px;
     width: 100%;
     font-size: 16px;
@@ -772,13 +780,15 @@ html {
     opacity: 0.8;
 }
 
-.signup-text-btn .signup-btn input {
+.signup-text-btn .signup-btn button {
     border: none;
     padding: 12px 20px;
     background-color: #ffb416;
     border-radius: 0px 50px 50px 0px;
-    margin-left: -89px;
     color: #f3f2fb;
+    position: absolute;
+    right: 0;
+    cursor: pointer;
 }
 
 .footer-introduction .introduction {

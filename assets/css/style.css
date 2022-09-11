@@ -394,13 +394,13 @@ html {
     position: relative;
     cursor: pointer;
     margin-left: 11px;
+    -webkit-tap-highlight-color: transparent;
 }
 
 .sectiontwo-item .item-sp {
     font-size: 15px;
     overflow: hidden;
 }
-
 
 .sectiontwo-item .item-sp > a:hover {
     color: #ffb416;
@@ -857,6 +857,7 @@ html {
     color: #f3f2fb;
     position: absolute;
     right: 0;
+    cursor: pointer;
 }
 
 .footer-introduction .introduction {
